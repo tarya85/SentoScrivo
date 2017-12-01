@@ -1,0 +1,267 @@
+// ****************************
+//
+//  BUTTONS
+//
+//  Mobile First (less than 768)
+//
+// ****************************
+
+
+
+a.button{
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	padding:15px 30px;
+	color: $c-white;
+	font-family:$headings-font-family;
+	font-size:$font-base-size;
+	text-align: left;
+	text-decoration: none;
+	text-transform: none;
+	word-wrap: break-word;
+	border: 1px solid $c-white;
+	cursor: pointer;
+	background:transparent;
+	z-index:3;
+
+	i[class^="icon-"], i[class*=" icon-"]{
+		margin-left:10px;
+		font-size:150%;
+		float:right;
+		color: $c-white;
+	}
+
+	&:hover{
+		color: $c-white;
+		text-shadow: none;
+	}
+
+}
+
+
+
+a.animated-button {
+	position: relative;
+	overflow: hidden;
+	border-radius: 0;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+	vertical-align: middle;
+	
+}
+a.animated-button:after{
+	content: "";
+	position: absolute;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 150%;
+	z-index: -1;
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+	background: $c-red;
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+
+a.animated-button:hover:after {
+	height: 450%;
+}
+
+
+.site-single-project .site-single-project__details .site-single-project__description {
+	a.button{
+		color: $c-red;
+		border-color:$c-red;
+		transition-property: none;
+		
+
+		i[class^="icon-"], i[class*=" icon-"]{
+			color: $c-red;
+			transition-property: none;
+		}
+
+		&:hover{
+			color: $c-white;
+
+			i[class^="icon-"], i[class*=" icon-"]{
+				color: $c-white;
+			}
+		}
+	}
+
+
+}
+
+.site-single-project .site-single-project__details .site-single-project__navigation{
+	a.button{
+		width:100%;
+		max-width:300px;
+		margin-bottom:20px;
+		float:none;
+
+		&:last-child{
+			margin-bottom:0!important;
+		}
+	}
+}
+
+a.scrollToTop {
+	display: none;
+	width:auto;
+	height: auto;
+	padding:15px;
+	position: fixed;
+	bottom:10px;
+	right: 10px;
+	z-index: 1234;
+	background:rgba(189,29,45,0.6);
+	border:1px solid $c-white;
+	color:$c-white;
+	transition-property: background-color;
+    transition-duration: 0.3s;
+    font-size:$font-size-h3;
+    line-height:1;
+    text-decoration:none;
+
+	i[class^="icon-"], i[class*=" icon-"]{
+		margin-left:0px;
+		color:$c-white;
+		font-size:100%;	
+	}
+
+	&:hover{
+		background:rgba(189,29,45,1);
+		color:$c-white;
+		border-color:$c-white;
+		text-decoration:none;
+	}
+}
+
+
+a.scrolldown{
+	position:absolute;
+	bottom:10px;
+	left:50%;
+	margin:0;
+	margin-left:-30px;
+	display:block;
+	border:0;
+	color:$c-white;
+	font-size:45px;
+	line-height:1;
+	background:transparent;
+	padding:0;
+	/*animation-duration: 1s;
+	animation-name: slidein;
+	animation-iteration-count: infinite;*/
+
+
+	i[class^="icon-"], i[class*=" icon-"]{
+		margin-left:0px;
+		color:$c-white;
+		
+	}
+
+	&:hover{
+		background:transparent;
+		color:$c-red;
+
+		i[class^="icon-"], i[class*=" icon-"]{
+			color:$c-red;
+		}
+	}
+}
+
+a.button.site-header__hamburger{
+	padding:15px 15px 10px 15px;
+	background:transparent;
+	
+
+	[class^="icon-"], [class*=" icon-"]{
+		float:none;
+		margin:0;
+		color:$c-white;
+	}
+
+	&:hover{
+		background:transparent;
+		color:$c-white;
+		border-color:$c-white;
+
+		i[class^="icon-"], i[class*=" icon-"]{
+			color:$c-white;
+		}
+	}
+}
+
+.site-header.fixed-header a.button.site-header__hamburger{
+	color:$c-red;
+	border-color:$c-red;
+
+	[class^="icon-"], [class*=" icon-"]{
+		color:$c-red;
+	}
+
+	&:hover{
+		background:transparent;
+		color:$c-dark-red;
+		border-color:$c-dark-red;
+
+		i[class^="icon-"], i[class*=" icon-"]{
+			color:$c-dark-red;
+		}
+	}
+}
+
+@keyframes slidein {
+  0% {
+    bottom:40px;
+  }
+
+  50% {
+    bottom:20px;
+  }
+
+  100% {
+    bottom:40px;
+  }
+}
+
+
+//
+//  Small devices (tablets, 768px and up)
+//
+@media (min-width: $screen-sm-min) {
+	a.scrolldown{
+		bottom:40px;
+	}
+
+	a.scrollToTop{
+		font-size:$font-size-h2;
+		bottom:20px;
+		right:20px;
+	}
+
+}
+
+//
+//  Medium devices (desktops, 992px and up)
+//
+@media (min-width: $screen-md-min) {
+
+}
+
+//
+//  Large devices (large desktops, 1200px and up)
+//
+@media (min-width: $screen-lg-min) {
+
+}

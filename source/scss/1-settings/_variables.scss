@@ -1,0 +1,101 @@
+// ****************************
+//
+//  VARIABLES
+//
+// ****************************
+
+// Namespace
+
+$p: null !default;
+
+// Fonts
+
+$font-base-size: 18px !default;
+$font-base-line-height: 24px !default;
+$rem-base-size: $font-base-size;
+
+$font-size-h1: 45px;
+$font-size-h2: 40px;
+$font-size-h3: 25px;
+$font-size-h4: 20px;
+$font-size-h5: $font-base-size;
+$font-size-h6: 14px;
+
+$font-size-h1-small: 30px;
+$font-size-h2-small: 25px;
+$font-size-h3-small: 20px;
+
+
+$font-light: 300;
+$font-regular: 400;
+$font-semibold: 600;
+$font-bold: 700;
+$font-heavy: 900;
+
+$font-family-sans-serif:  'Merriweather', serif !default;
+$font-base-family: $font-family-sans-serif;
+$font-base-weight: $font-regular;
+
+$headings-font-family:    'Merriweather Sans', sans-serif !default;
+$headings-font-weight:    $font-regular !default;
+$headings-line-height:    1.1 !default;
+$headings-color:          inherit !default;
+
+$line-height-computed: 20px;
+
+$check-icon-code: '\e905';
+$error-icon-code: '\e906';
+
+// Spaces
+
+// Default: (n: 0, s: 5, m: 10, l: 20, xl: 30, xxl: 40);
+$u-space-size: (n: 0, s: 3, m: 5, l: 10, xl: 20);
+$u-space-variant: (a: (top, left, bottom, right), v: (top, bottom), h: (left, right), t: (top), l: (left), b: (bottom), r: (right));
+$u-space-size-tablet: (n: 0, s: 5, m: 10, l: 20, xl: 40);
+$u-space-variant-tablet: (a: (top, left, bottom, right), v: (top, bottom), h: (left, right), t: (top), l: (left), b: (bottom), r: (right));
+
+// Color
+
+$base-text-color:         #222222 !default;
+$base-background-color:   #fff !default;
+
+$c-white: #FFF;
+$c-black: #222222;
+$c-grey: #5d5d5d;
+$c-dark-red:#3f0e19;
+$c-red:#bd1d2d;
+
+
+// Box property
+
+$box-round: 5px;
+
+// Animation
+
+$transition-duration-fast: 150ms;
+$transition-duration-normal: 400ms;
+
+// Media queries breakpoints
+$screen-xs:                  480px !default;
+$screen-xs-min:              $screen-xs !default;
+$screen-phone:               $screen-xs;
+
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+$screen-tablet:              $screen-sm;
+
+$screen-md:                  970px !default;
+$screen-md-min:              $screen-md !default;
+$screen-desktop:             $screen-md;
+
+$screen-lg:                  1170px !default;
+$screen-lg-min:              $screen-lg !default;
+$screen-desktop-hd:          $screen-lg;
+
+$screen-xl:                  1400px !default;
+$screen-xl-min:              $screen-xl !default;
+$screen-desktop-hd:          $screen-xl;
+
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;

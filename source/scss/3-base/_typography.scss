@@ -1,0 +1,204 @@
+// ****************************
+//
+//  TYPOGRAPHY
+
+//
+//  Mobile First (less than 768)
+//
+// ****************************
+
+
+
+// Headings
+// -------------------------
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  @include default-floating;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $c-dark-red;
+  background-color:transparent;
+  text-transform:uppercase;
+  clear:both;
+  margin-bottom:20px;
+  text-align:left;
+
+}
+
+
+.alignCenter h1, .alignCenter h2,.alignCenter h3,.alignCenter h4,.alignCenter h5,.alignCenter h6,
+.alignCenter .h1,.alignCenter .h2,.alignCenter .h3,.alignCenter .h4,.alignCenter .h5,.alignCenter .h6,.alignCenter .subtitle{
+    text-align:center;
+}
+
+
+
+h1, .h1 { font-size: $font-size-h1-small; }
+h2, .h2 { font-size: $font-size-h2-small; }
+h3, .h3 { font-size: $font-size-h3-small; }
+h4, .h4 { font-size: $font-size-h4; }
+h5, .h5 { font-size: $font-size-h5; }
+h6, .h6 { font-size: $font-size-h6; }
+
+
+
+p, ul, ol, blockquote{
+	@include default-floating;
+	margin-bottom:20px;
+	font-size: $font-base-size;
+    font-family: $font-base-family;
+    font-weight: $font-base-weight;
+    line-height: 1.6;
+    text-align:left;
+    color:$c-grey;
+}
+
+.site-header,.site-content,.site-services,.site-partners,.site-contacts,.site-intro,.site-banners .site-banner,.site-single-project .site-single-project__details .site-single-project__navigation,.site-basic{
+    p:last-child{
+        margin-bottom:0!important;
+    }
+}
+
+
+
+.entry-content ul{
+    list-style-type: disc;
+    padding-left:20px;
+
+    li{
+        padding-left:20px;
+        margin-bottom:10px;
+    }
+}
+
+.entry-content ol{
+    list-style-type: decimal;
+    padding-left:20px;
+    
+    li{
+        padding-left:20px;
+        margin-bottom:10px;
+    }
+}
+
+blockquote{
+    padding:15px;
+    color:$c-white;
+    margin:0;
+    
+    p{
+        font-size:$font-size-h3;
+        font-weight:$font-light;
+        line-height:1;
+        margin-bottom:20px;
+
+        span{
+            font-size:$font-base-size;
+        }
+
+        span.author{
+            font-weight:$font-bold;
+        }
+    }
+
+}
+
+
+p strong, ul strong, ol strong{
+	font-weight:$font-bold;
+}
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+.alignCenter{
+    text-align: center;
+}
+
+.alignRight{
+    text-align: right;
+}
+
+.marginTop{
+    margin-top:20px!important;
+}
+
+.subtitle{
+    @include default-floating;
+    color:$c-red;
+    font-style:italic;
+    font-size:$font-base-size;
+    margin-bottom:60px;
+    text-align:left;
+
+    &:after{
+        content:"";
+        display:block;
+        width:54px;
+        height:2px;
+        background-color:$c-red;
+        position:absolute;
+        bottom:-30px;
+        left:0;
+
+    }
+}
+
+.alignCenter .subtitle:after{
+    margin-left:-27px;
+    left:50%;
+}
+
+.full-3-column  .container h3{
+    margin-bottom:30px; 
+
+    &:after{
+        content:"";
+        display:block;
+        width:54px;
+        height:2px;
+        background-color:$c-red;
+        position:absolute;
+        bottom:-20px;
+        left:0;
+    }
+}
+
+.full-3-column  .container.alignCenter h3:after{
+    margin-left:-27px;
+    left:50%;
+}
+
+//
+//  Small devices (mobile, 480px and up)
+//
+@media (min-width: $screen-xs-min) {
+    blockquote{
+        padding:50px;
+    }
+
+}
+//
+//  Small devices (tablets, 768px and up)
+//
+@media (min-width: $screen-sm-min) {
+    h1, .h1 { font-size: $font-size-h1; }
+    h2, .h2 { font-size: $font-size-h2; }
+    h3, .h3 { font-size: $font-size-h3; }
+
+    p, ul, ol, blockquote,h1, h2, h3, h4, h5, h6,
+    .h1, .h2, .h3, .h4, .h5, .h6{
+        margin-bottom:40px;
+    }
+
+    .marginTop{
+        margin-top:40px;
+    }
+
+
+
+}

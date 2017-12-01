@@ -1,0 +1,56 @@
+// ****************************
+//
+//  LINKS
+//
+//  Mobile First (less than 768)
+//
+// ****************************
+
+a {
+    @include reset-link;
+
+    color: $c-red;
+    text-decoration:none;
+    cursor: pointer;
+    transition-property: color;
+    transition-duration: 0.3s;
+
+    &:visited{
+    	color: $c-red;
+    	text-decoration:none;
+    }
+
+    &:hover{
+    	color: $c-black;
+    	text-decoration:none;
+    }
+
+    &.animated {
+       
+    }
+
+    &:focus{
+        outline: none;
+    }
+}
+
+//
+//  Small devices (tablets, 768px and up)
+//
+@media (min-width: $screen-sm-min) {
+
+}
+
+//
+//  Medium devices (desktops, 992px and up)
+//
+@media (min-width: $screen-md-min) {
+
+}
+
+//
+//  Large devices (large desktops, 1200px and up)
+//
+@media (min-width: $screen-lg-min) {
+
+}

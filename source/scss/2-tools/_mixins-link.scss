@@ -1,0 +1,34 @@
+/**
+ * Reset link
+ */
+@mixin reset-link() {
+    text-decoration: none;
+    color: inherit;
+    
+    &:active,
+    &:focus {
+        outline: none;
+    }
+}
+
+@mixin link-color($color: none) {
+    color: $color;
+    &:visited {
+        color: $color;
+    }
+}
+
+/**
+ * Hover link
+ * @param  String  $color
+ */
+@mixin hover($color: none) {
+    &:active,
+    .no-touch &:focus,
+    .no-touch &:hover {
+        @if $color != none {
+            color: $color;
+        }
+        @content;
+    }
+}

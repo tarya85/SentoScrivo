@@ -1,0 +1,83 @@
+.site-home-slider{
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center center;
+}
+
+
+.site-contacts {
+    @include default-floating;
+
+    h4{
+        color:$c-white;
+        font-size:$font-size-h3;
+        font-weight:$font-bold;
+    }
+
+    .col1,.col2{
+        @include default-floating;
+        padding:5%;
+    }
+}
+
+.site-contacts .col1{
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-image:url(../images/sfondo-contatti.jpg);
+}
+
+
+.site-contacts p{
+    color:$c-white;
+}
+
+
+//
+//  Small devices (tablets, 768px and up)
+//
+@media (min-width: $screen-sm-min) {
+
+
+
+
+    
+}
+
+//
+//  Small devices (tablets, 970px and up)
+//
+@media (min-width: $screen-md-min) {
+    .site-contacts{
+        display: table;
+        float:none;
+
+        .row {
+            display: table-row;
+            float:none;
+        }
+
+        .col1{
+            display: table-cell;
+            vertical-align: top;
+            float:none;
+            width:33.33%;
+            margin:0;
+            padding:3%;
+        }
+
+        .col2{
+            display: table-cell;
+            vertical-align: top;
+            float:none;
+            width:66.67%;
+            margin:0;
+            padding:3%;
+        }
+    }
+
+
+}
+
+
+

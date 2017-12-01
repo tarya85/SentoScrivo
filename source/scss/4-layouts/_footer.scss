@@ -1,0 +1,81 @@
+// ****************************
+//
+//  FOOTER
+//
+//  Mobile First (less than 768)
+//
+// ****************************
+
+.site-footer{
+	background-color: $c-dark-red;
+	padding:25px 0;
+}
+
+
+.site-footer__social-icons{
+	@include default-floating;
+	text-align:center;
+
+	li{
+		display:inline-block;
+	}
+
+	li a{
+		color:$c-red;
+		text-decoration:none;
+		display:inline-block;
+        font-size:$font-size-h1;
+        line-height:1;
+        margin-right:5px;
+        transition: 0.3s;
+
+		&:hover{
+			color:$c-white;
+			text-decoration:none;
+		}
+	}
+}
+
+
+.site-footer p{
+	color:$c-white;
+	text-align:center;
+	margin-bottom:10px;
+	font-size:14px;
+
+	a:hover{
+		color:$c-white;
+	}
+}
+
+
+
+//
+//  Small devices (tablets, 768px and up)
+//
+@media (min-width: $screen-sm-min) {
+
+
+
+}
+
+//
+//  Medium devices (desktops, 992px and up)
+//
+@media (min-width: $screen-md-min) {
+
+
+
+
+}
+
+//
+//  Large devices (large desktops, 1200px and up)
+//
+@media (min-width: $screen-lg-min) {
+
+
+
+
+
+}
