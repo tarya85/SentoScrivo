@@ -2,3 +2,27 @@
 @import "2-tools/mixins";
 @import "2-tools/mixins-link";
 
+.site-contacts,.site-contacts .row,.site-contacts .col1,.site-contacts .col2{
+    display:block;
+    float:left;
+    position:relative;
+}
+
+.site-contacts .col1{
+    min-height:auto;
+}
+
+.site-contacts .col2{
+    min-height:1000px;
+}
+
+
+//
+//  Large devices (large desktops, 970px and up)
+//
+@media (min-width: $screen-md-min) {
+    .site-contacts .col1,.site-contacts .col2{
+        min-height:800px;
+    }
+    
+}
