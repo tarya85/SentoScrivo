@@ -1,5 +1,5 @@
 $(window).load(function () {
-    //$(".site-loader").fadeOut("slow");;
+    $(".site-loader").fadeOut("slow");;
 
     if ($(window).width() > 1170 && (msieversion() >= 10 || msieversion() == 'other')) {
         checkParallax();
@@ -11,13 +11,17 @@ $(window).load(function () {
 
 jQuery(document).ready(function ($) {
 
-    /*$('#searchform').submit(function(e) { 
+    $('#searchform').submit(function(e) { 
         var s = $( this ).find("#s").val($.trim($( this ).find("#s").val()));
         if (!s.val()) { 
             e.preventDefault(); 
             $('#s').focus();
         }
-    });*/
+    });
+
+    if ($('input#acconsento').length > 0) {
+        $('input#acconsento').unwrap();
+    }
 
     //center content in home header and set it 100% height
     if ($('.site-home-slider').length > 0) {
