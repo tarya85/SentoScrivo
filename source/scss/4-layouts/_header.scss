@@ -83,7 +83,7 @@
 		position:relative;
 		float:left;
 		display:block;
-		width:auto;
+		width:70%;
 		height:auto;
 		margin:0;
 		padding:10px 0;
@@ -91,6 +91,7 @@
 
 		img{
 			float:left;
+			display:block;
 			width:100%;
 			max-width:180px;
 			height:auto;
@@ -307,6 +308,10 @@
 
 	.site-header .site-header__menu ul li a{
 		font-size:15px;
+	}
+
+	.site-header .site-header__logo{
+		width:40%;
 	}
 
 }

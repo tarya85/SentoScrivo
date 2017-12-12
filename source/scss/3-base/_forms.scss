@@ -9,6 +9,7 @@
 
 form, form label, form legend,form fieldset{
 	@include default-floating;
+	
 }
 
 form a:hover{
@@ -22,6 +23,7 @@ form label, form legend{
 	text-transform: uppercase;
 	font-size:18px;
 	font-weight:$font-light;
+	margin-bottom:5px 0;
 }
 
 
@@ -53,7 +55,7 @@ form input, form textarea{
 form textarea{
 	resize:vertical;
 	border:1px solid $c-black;
-	min-height:281px;
+	min-height:150px;
 	padding:1em;
 	margin-top:20px;
 }
@@ -86,7 +88,7 @@ form input[type="checkbox"] + label{
 }
 
 
-form input[type=submit], form input.submit{
+form input[type=submit], form input.submit, button#searchsubmit{
 	width:auto;
 	float:left;
 	color:$c-white;
@@ -113,28 +115,36 @@ form input[type=submit], form input.submit{
 
 }
 
-.site-header.page404{
+.error-404{
 
 	input{
-		width:calc(100% - 65px);
-		padding:20px 5%;
-		border:2px solid $c-dark-red;
+		width:calc(100% - 70px);
+		padding:19px 5%;
+		border-width:2px;
+		margin-right:10px;
+		
+	
 	}
 
 	button#searchsubmit{
 		background-color:$c-red;
 		color:$c-white;
-		border:0;
-		padding:21px 18px 21px 18px;
+		padding:16px 16px;
 		cursor:pointer;
+		margin:0;
+		clear: none;
+		border:0;
+		
+	
+		
 
 		[class^="icon-"], [class*=" icon-"]{
 			color:$c-white;
-			font-size:20px;
+			font-size:25px;
 		}
 
 		&:hover{
-			background-color:$c-grey;
+			background-color:$c-dark-red;
 			color:$c-white;
 		}
 	}
@@ -324,6 +334,16 @@ form input[type="checkbox"]:not(:checked):focus + label:before {
 
 	.site-header.page404 input{
 		padding:19px 2%;
+	}
+
+	.error-404{
+
+		input{
+
+			padding:19px 3%;
+
+		
+		}
 	}
 }
 

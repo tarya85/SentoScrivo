@@ -11,8 +11,8 @@
 a.button{
 	position: relative;
 	display: inline-block;
-	margin: 0;
-	padding:15px 30px;
+	margin: 20px 0;
+	padding:15px 20px;
 	color: $c-white;
 	font-family:$headings-font-family;
 	font-size:$font-base-size;
@@ -20,21 +20,24 @@ a.button{
 	text-decoration: none;
 	text-transform: none;
 	word-wrap: break-word;
-	border: 1px solid $c-white;
+	border:0;
 	cursor: pointer;
-	background:transparent;
+	background-color:$c-red;
 	z-index:3;
 
 	i[class^="icon-"], i[class*=" icon-"]{
 		margin-left:10px;
-		font-size:150%;
+		font-size:110%;
 		float:right;
 		color: $c-white;
+		font-weight:$font-semibold;
+		margin-top:3px;
 	}
 
 	&:hover{
 		color: $c-white;
 		text-shadow: none;
+		background-color:$c-dark-red;
 	}
 
 }

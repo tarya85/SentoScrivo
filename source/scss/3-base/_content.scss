@@ -152,6 +152,9 @@
   to { transform: translateY(0); }
 }
 
+.site-content.error-404{
+	padding:250px 0 100px 0;
+}
 
 //
 //  Small devices (mobile, 480px and up)
@@ -225,6 +228,8 @@
 		width:33.33%;
 		height:550px;
 	}
+
+	
 
 
 }
