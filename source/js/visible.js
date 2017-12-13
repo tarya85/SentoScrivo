@@ -49,3 +49,24 @@ win.scroll(function(event) {
   });
   
 });
+
+
+var allMods2 = $(".module2");
+
+allMods2.each(function(i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+    el.addClass("already-visible2"); 
+  } 
+});
+
+win.scroll(function(event) {
+  
+  allMods2.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-in2"); 
+    } 
+  });
+  
+});

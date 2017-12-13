@@ -48,6 +48,25 @@ win.scroll(function (event) {
     }
   });
 });
+
+var allMods2 = $(".module2");
+
+allMods2.each(function (i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+    el.addClass("already-visible2");
+  }
+});
+
+win.scroll(function (event) {
+
+  allMods2.each(function (i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-in2");
+    }
+  });
+});
 "use strict";
 
 // ----------------------------------------------------------------------------------------------------
@@ -183,12 +202,13 @@ var scrollme = function (a) {
 "use strict";
 
 $(window).load(function () {
-    $(".site-loader").fadeOut("slow");;
+    setTimeout(function () {
+        $(".site-loader").fadeOut("slow");
+    }, 1000);
 
     if ($(window).width() > 1170 && (msieversion() >= 10 || msieversion() == 'other')) {
         checkParallax();
     } else {
-        console.log('no parallax');
         $('.full-animated-columns .full-column-text').css("transform", "none");
     }
 });
@@ -222,7 +242,6 @@ jQuery(document).ready(function ($) {
         if ($(window).width() > 1170 && (msieversion() >= 10 || msieversion() == 'other')) {
             checkParallax();
         } else {
-            console.log('no parallax');
             $('.full-animated-columns .full-column-text').css("transform", "none");
         }
     });

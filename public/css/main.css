@@ -181,6 +181,24 @@ a:focus { outline: none; }
 
 .already-visible { transform: translateY(0); animation: none; }
 
+.come-in2 { -webkit-animation-name: fadeIn; -webkit-animation-duration: 1s; animation-name: fadeIn; animation-duration: 1s; }
+
+.already-visible2 { animation: none; }
+
+@-webkit-keyframes fadeIn { 0% { opacity: 0; }
+  20% { opacity: 0; }
+  40% { opacity: 0.3; }
+  60% { opacity: 0.5; }
+  80% { opacity: 0.9; }
+  100% { opacity: 1; } }
+
+@keyframes fadeIn { 0% { opacity: 0; }
+  20% { opacity: 0; }
+  40% { opacity: 0.3; }
+  60% { opacity: 0.5; }
+  80% { opacity: 0.9; }
+  100% { opacity: 1; } }
+
 #mappa { float: left; position: relative; margin: 0; padding: 0; width: 100%; display: block; height: 600px; }
 
 .hidden { display: none !important; }
@@ -327,15 +345,15 @@ form input[type="checkbox"]:checked:focus + label:before, form input[type="check
 
 .site-header { position: fixed; top: 0; left: 0; padding: 0; border-bottom: 1px solid #FFF; z-index: 10; }
 
-.site-header .site-header__logo { position: relative; float: left; display: block; width: 70%; height: auto; margin: 0; padding: 10px 0; text-align: center; }
+.site-header .site-header__logo { position: relative; float: left; display: block; width: 180px; height: auto; margin: 15px 0; padding: 0; text-align: center; }
 
-.site-header .site-header__logo img { float: left; display: block; width: 100%; max-width: 180px; height: auto; }
+.site-header .site-header__logo img { float: left; display: block; width: 100%; height: auto; }
 
 .site-header .site-header__logo.fixed { display: none; }
 
 .site-header .site-header__hamburger { display: block; }
 
-.site-header .site-header__menu { float: right; width: auto; margin-top: 20px; }
+.site-header .site-header__menu { float: right; width: auto; }
 
 .site-header .site-header__menu ul { margin: 0; display: none; }
 
@@ -353,11 +371,9 @@ form input[type="checkbox"]:checked:focus + label:before, form input[type="check
 
 .site-header.fixed-header { background-color: rgba(255, 255, 255, 0.9); top: 0; }
 
-.site-header.fixed-header .site-header__logo { display: none; max-width: 180px; }
+.site-header.fixed-header .site-header__logo { display: none; }
 
 .site-header.fixed-header .site-header__logo.fixed { display: block; }
-
-.site-header.fixed-header .site-header__menu { margin-top: 20px; }
 
 .site-header.fixed-header .site-header__menu ul li a { padding: 20px 10px; color: #bd1d2d; }
 
@@ -385,15 +401,16 @@ form input[type="checkbox"]:checked:focus + label:before, form input[type="check
 
 @media (min-width: 970px) { .site-top p { font-size: 14px; }
   .site-top p.alignRight a { padding: 13px 20px; }
-  .site-header .site-header__menu { margin-top: 8px; }
+  .site-header .site-header__menu { margin: 15px 0; }
+  .site-header.fixed-header .site-header__menu { margin: 25px 0 15px 0; }
   .site-header .site-header__menu ul { display: block; }
   .site-header .site-header__hamburger { display: none; }
-  .site-header .site-header__menu ul li a { font-size: 15px; }
-  .site-header .site-header__logo { width: 40%; } }
+  .site-header .site-header__menu ul li a { font-size: 15px; } }
 
-@media (min-width: 1170px) { .site-header .site-header__menu { margin-top: 25px; }
+@media (min-width: 1170px) { .site-header .site-header__menu { margin-top: 30px; }
   .site-header .site-header__menu ul li a { font-size: 14px; }
-  .site-header .site-header__logo img { max-width: 260px; } }
+  .site-header.fixed-header .site-header__menu { margin: 40px 0 15px 0; }
+  .site-header .site-header__logo { width: 260px; } }
 
 .site-overlay { height: 100%; width: 0; position: fixed; z-index: 12345; left: 0; top: 0; background-color: #3f0e19; overflow-x: hidden; transition: 0.5s; }
 
@@ -721,7 +738,7 @@ a.scrolldown:hover { background: transparent; color: #bd1d2d; }
 
 a.scrolldown:hover i[class^="icon-"], a.scrolldown:hover i[class*=" icon-"] { color: #bd1d2d; }
 
-a.button.site-header__hamburger, .comments-area .reply a.site-header__hamburger.comment-reply-link { padding: 15px 15px 10px 15px; background: transparent; }
+a.button.site-header__hamburger, .comments-area .reply a.site-header__hamburger.comment-reply-link { padding: 15px 15px 10px 15px; background: transparent; font-size: 30px; }
 
 a.button.site-header__hamburger [class^="icon-"], .comments-area .reply a.site-header__hamburger.comment-reply-link [class^="icon-"], a.button.site-header__hamburger [class*=" icon-"], .comments-area .reply a.site-header__hamburger.comment-reply-link [class*=" icon-"] { float: none; margin: 0; color: #FFF; }
 

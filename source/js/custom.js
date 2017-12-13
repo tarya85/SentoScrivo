@@ -1,10 +1,9 @@
 $(window).load(function () {
-    $(".site-loader").fadeOut("slow");;
+    setTimeout(function(){$(".site-loader").fadeOut("slow")}, 1000);
 
     if ($(window).width() > 1170 && (msieversion() >= 10 || msieversion() == 'other')) {
         checkParallax();
     } else {
-        console.log('no parallax');
         $('.full-animated-columns .full-column-text').css("transform", "none");
     }
 });
@@ -34,11 +33,11 @@ jQuery(document).ready(function ($) {
         });
     }
 
+
     $(window).on("resize orientationchange", function (event) {
         if ($(window).width() > 1170 && (msieversion() >= 10 || msieversion() == 'other')) {
             checkParallax();
         } else {
-            console.log('no parallax');
             $('.full-animated-columns .full-column-text').css("transform", "none");
         }
     });
@@ -88,6 +87,8 @@ jQuery(document).ready(function ($) {
         e.preventDefault();
         $('.site-overlay').css('width', '0%');
     });
+
+
 
 });
 

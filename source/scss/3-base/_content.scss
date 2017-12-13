@@ -115,6 +115,38 @@
   animation: none;
 }
 
+.come-in2 {
+	-webkit-animation-name: fadeIn;
+	-webkit-animation-duration: 1s;
+	animation-name: fadeIn;
+	animation-duration: 1s;
+  }
+  
+  .already-visible2 {
+	
+	animation: none;
+  }
+
+@-webkit-keyframes fadeIn { 
+	0% { opacity: 0; }
+	20% { opacity: 0; }
+	40% { opacity: 0.3; }
+	60% { opacity: 0.5; }
+	80% { opacity: 0.9; }
+	100% { opacity: 1; }
+  }
+  
+  @keyframes fadeIn {
+	0% { opacity: 0; }
+	20% { opacity: 0; }
+	40% { opacity: 0.3; }
+	60% { opacity: 0.5; }
+	80% { opacity: 0.9; }
+	100% { opacity: 1; }
+  }
+
+
+
 #mappa{
 	@include default-floating;
 	height:600px;
