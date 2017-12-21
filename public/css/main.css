@@ -349,7 +349,7 @@ form input[type="checkbox"]:checked:focus + label:before, form input[type="check
 
 .site-header .site-header__logo img { float: left; display: block; width: 100%; height: auto; }
 
-.site-header .site-header__logo.fixed { display: none; }
+.site-header .site-header__logo.fixed { display: none; width: 180px; }
 
 .site-header .site-header__hamburger { display: block; }
 
@@ -409,7 +409,7 @@ form input[type="checkbox"]:checked:focus + label:before, form input[type="check
 
 @media (min-width: 1170px) { .site-header .site-header__menu { margin-top: 30px; }
   .site-header .site-header__menu ul li a { font-size: 14px; }
-  .site-header.fixed-header .site-header__menu { margin: 40px 0 15px 0; }
+  .site-header.fixed-header .site-header__menu { margin: 25px 0 15px 0; }
   .site-header .site-header__logo { width: 260px; } }
 
 .site-overlay { height: 100%; width: 0; position: fixed; z-index: 12345; left: 0; top: 0; background-color: #3f0e19; overflow-x: hidden; transition: 0.5s; }
@@ -724,9 +724,9 @@ a.animated-button:hover:after { height: 450%; }
 
 .site-single-project .site-single-project__details .site-single-project__navigation a.button:last-child, .site-single-project .site-single-project__details .site-single-project__navigation .comments-area .reply a.comment-reply-link:last-child, .comments-area .reply .site-single-project .site-single-project__details .site-single-project__navigation a.comment-reply-link:last-child { margin-bottom: 0 !important; }
 
-a.scrollToTop { display: none; width: auto; height: auto; padding: 15px; position: fixed; bottom: 10px; right: 10px; z-index: 1234; background: rgba(189, 29, 45, 0.6); border: 1px solid #FFF; color: #FFF; transition-property: background-color; transition-duration: 0.3s; font-size: 25px; line-height: 1; text-decoration: none; }
+a.scrollToTop { display: none; width: auto; height: auto; padding: 15px; margin: 0; position: fixed; bottom: 10px; right: 10px; z-index: 1234; background: rgba(189, 29, 45, 0.6); border: 1px solid #FFF; color: #FFF; transition-property: background-color; transition-duration: 0.3s; font-size: 25px; line-height: 1; text-decoration: none; }
 
-a.scrollToTop i[class^="icon-"], a.scrollToTop i[class*=" icon-"] { margin-left: 0px; color: #FFF; font-size: 100%; }
+a.scrollToTop i[class^="icon-"], a.scrollToTop i[class*=" icon-"] { margin: 0; color: #FFF; font-size: 100%; }
 
 a.scrollToTop:hover { background: #bd1d2d; color: #FFF; border-color: #FFF; text-decoration: none; }
 
@@ -759,4 +759,4 @@ a.button.site-header__hamburger:hover i[class^="icon-"], .comments-area .reply a
   100% { bottom: 40px; } }
 
 @media (min-width: 768px) { a.scrolldown { bottom: 40px; }
-  a.scrollToTop { font-size: 30px; bottom: 20px; right: 20px; } }
+  a.scrollToTop { font-size: 30px; } }

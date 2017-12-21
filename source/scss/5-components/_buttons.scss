@@ -121,6 +121,7 @@ a.scrollToTop {
 	width:auto;
 	height: auto;
 	padding:15px;
+	margin:0;
 	position: fixed;
 	bottom:10px;
 	right: 10px;
@@ -135,7 +136,7 @@ a.scrollToTop {
     text-decoration:none;
 
 	i[class^="icon-"], i[class*=" icon-"]{
-		margin-left:0px;
+		margin:0;
 		color:$c-white;
 		font-size:100%;	
 	}
@@ -250,8 +251,6 @@ a.button.site-header__hamburger{
 
 	a.scrollToTop{
 		font-size:$font-size-h2;
-		bottom:20px;
-		right:20px;
 	}
 
 }
