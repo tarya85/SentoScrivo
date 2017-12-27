@@ -8,13 +8,14 @@
 
 .site-footer{
 	background-color: $c-dark-red;
-	padding:25px 0;
+	padding:30px 0;
 }
 
 
 .site-footer__social-icons{
 	@include default-floating;
 	text-align:center;
+	margin-top:20px;
 
 	li{
 		display:inline-block;
@@ -42,6 +43,8 @@
 	text-align:center;
 	margin-bottom:10px;
 	font-size:14px;
+	margin:0;
+	padding:0;
 
 	a:hover{
 		color:$c-white;
