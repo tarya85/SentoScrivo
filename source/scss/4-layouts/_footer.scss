@@ -9,6 +9,16 @@
 .site-footer{
 	background-color: $c-dark-red;
 	padding:30px 0;
+
+	a{
+		color:$c-white;
+		text-decoration: underline;
+
+		&:hover{
+			color:$c-white;
+			text-decoration: none;
+		}
+	}
 }
 
 

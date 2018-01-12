@@ -359,17 +359,21 @@ form input[type="checkbox"]:checked:focus + label:before, form input[type="check
 
 .site-header .site-header__menu ul { margin: 0; display: none; }
 
-.site-header .site-header__menu ul li { display: inline; position: relative; }
+.site-header .site-header__menu ul li { display: inline; position: relative; padding: 30px 0px; margin: 0 10px; background: transparent; }
 
 .site-header .site-header__menu ul li a { display: inline-block; position: relative; padding: 30px 10px; color: #FFF; background: transparent; font-size: 14px; }
 
 .site-header .site-header__menu ul li a:hover { color: #3f0e19; }
 
-.site-header .site-header__menu ul li.current-menu-item a:before { content: ''; position: absolute; top: 0; left: 50%; margin-left: -1px; width: 2px; height: 30px; background-color: #FFF; }
+.site-header .site-header__menu ul li.current-menu-item:before { content: ''; position: absolute; top: 0; left: 50%; margin-left: -1px; width: 2px; height: 25px; background-color: #FFF; transition-property: background-color; transition-duration: 0.3s; }
 
-.site-header .site-header__menu ul li.current-menu-item a:after { content: ''; position: absolute; bottom: 0; left: 50%; margin-left: -1px; width: 2px; height: 30px; background-color: #FFF; transition-property: background-color; transition-duration: 0.3s; }
+.site-header .site-header__menu ul li.current-menu-item:after { content: ''; position: absolute; bottom: 0; left: 50%; margin-left: -1px; width: 2px; height: 25px; background-color: #FFF; transition-property: background-color; transition-duration: 0.3s; }
+
+.site-header .site-header__menu ul li.current-menu-item:hover:before, .site-header .site-header__menu ul li.current-menu-item:hover:after { background-color: #3f0e19; }
 
 .site-header .site-header__menu ul li.current-menu-item a:hover:before, .site-header .site-header__menu ul li.current-menu-item a:hover:after { background-color: #3f0e19; }
+
+.site-header .site-header__menu ul li.active > a { color: #3f0e19 !important; }
 
 .site-header.fixed-header { background-color: rgba(255, 255, 255, 0.9); top: 0; }
 
@@ -381,7 +385,7 @@ form input[type="checkbox"]:checked:focus + label:before, form input[type="check
 
 .site-header.fixed-header .site-header__menu ul li a:hover { color: #3f0e19; }
 
-.site-header.fixed-header .site-header__menu ul li a:before, .site-header.fixed-header .site-header__menu ul li a:after { height: 15px; background-color: #bd1d2d; }
+.site-header.fixed-header .site-header__menu ul li:before, .site-header.fixed-header .site-header__menu ul li:after { background-color: #bd1d2d; }
 
 .site-breadcrumb { float: left; position: relative; margin: 0; padding: 0; width: 100%; display: block; padding: 20px 0 40px 0; }
 
@@ -406,6 +410,13 @@ form input[type="checkbox"]:checked:focus + label:before, form input[type="check
   .site-header .site-header__menu { margin: 15px 0; }
   .site-header.fixed-header .site-header__menu { margin: 25px 0 15px 0; }
   .site-header .site-header__menu ul { display: block; }
+  .site-header .site-header__menu ul ul { display: none; position: absolute; width: inherit; margin: 0 0 0 -125px; padding: 10px 0; top: 80px; left: 50%; width: 250px; background-color: #3f0e19; z-index: 2; }
+  .site-header .site-header__menu ul ul:before { content: ''; z-index: 2; display: block; position: absolute; top: -10px; left: 50%; margin: 0 0 0 -10px; width: 0; height: 0; border-style: solid; border-width: 0 10px 10px 10px; border-color: transparent transparent #3f0e19 transparent; }
+  .site-header .site-header__menu ul ul li { display: inline-block; margin: 0; padding: 0; display: block; width: 100%; }
+  .site-header .site-header__menu ul ul li:before, .site-header .site-header__menu ul ul li:after { display: none; }
+  .site-header .site-header__menu ul ul li a { margin: 0; padding: 5px 10px !important; text-align: center; display: block; width: 100%; color: #FFF !important; }
+  .site-header .site-header__menu ul ul li a:hover { color: #cccccc !important; }
+  .site-header .site-header__menu ul li:hover ul { display: block; }
   .site-header .site-header__hamburger { display: none; }
   .site-header .site-header__menu ul li a { font-size: 15px; } }
 
@@ -414,23 +425,29 @@ form input[type="checkbox"]:checked:focus + label:before, form input[type="check
   .site-header.fixed-header .site-header__menu { margin: 25px 0 15px 0; }
   .site-header .site-header__logo { width: 260px; } }
 
-.site-overlay { height: 100%; width: 0; position: fixed; z-index: 12345; left: 0; top: 0; background-color: #3f0e19; overflow-x: hidden; transition: 0.5s; }
+.site-overlay { height: 100%; width: 100%; position: fixed; z-index: 12345; left: 0; top: 0; background-color: #3f0e19; overflow-x: hidden; -webkit-transform: translateX(100%); transform: translateX(100%); -webkit-transition: -webkit-transform 0.6s, visibility 0s 0.6s; transition: transform 0.6s, visibility 0s 0.6s; visibility: hidden; }
+
+.site-overlay.opened { visibility: visible; -webkit-transform: translateX(0%); transform: translateX(0%); -webkit-transition: -webkit-transform 0.6s; transition: transform 0.6s; }
 
 .site-overlay__content { position: relative; top: 0; width: 100%; text-align: center; margin: 0; z-index: 1; }
 
 .site-overlay__menu { float: none; position: relative; margin: 0 auto; }
 
-.site-overlay__menu ul { margin: 75px 0 0 0; text-align: center; }
+.site-overlay__menu ul { margin: 80px 0 0 0; padding: 0 5%; text-align: center; }
 
 .site-overlay__menu ul li { float: left; position: relative; margin: 0; padding: 0; width: 100%; display: block; }
 
-.site-overlay__menu ul li a { padding: 10px; margin: 0; text-decoration: none; font-family: "Merriweather Sans", sans-serif; font-size: 25px; line-height: 1; text-transform: uppercase; color: #FFF; display: inline-block; transition: 0.3s; background: transparent; }
+.site-overlay__menu ul li a { padding: 10px; margin: 0; text-decoration: none; font-family: "Merriweather Sans", sans-serif; font-size: 25px; line-height: 1.1; text-transform: uppercase; color: #FFF; display: inline-block; transition: 0.3s; background: transparent; }
 
 .site-overlay__menu ul li a:hover { color: #bd1d2d; background: transparent; }
 
+.site-overlay__menu ul li ul { margin: 0; }
+
+.site-overlay__menu ul li ul li a { font-size: 18px; text-transform: none; }
+
 .site-overlay__menu ul li.current-menu-item a { color: #bd1d2d; }
 
-.site-overlay .close { position: absolute; top: 20px; right: 10px; font-size: 25px; line-height: 1; z-index: 2; padding: 15px; border: 1px solid #FFF; color: #bd1d2d; transition: 0.3s; background: transparent; }
+.site-overlay .close { position: absolute; top: 10px; right: 10px; font-size: 25px; line-height: 1; z-index: 2; padding: 15px; border: 1px solid #FFF; color: #bd1d2d; transition: 0.3s; background: transparent; }
 
 .site-overlay .close [class^="icon-"], .site-overlay .close [class*=" icon-"] { color: #FFF; }
 
@@ -446,8 +463,7 @@ form input[type="checkbox"]:checked:focus + label:before, form input[type="check
 
 .site-overlay .site-overlay__social-icons li a:hover { color: #FFF; text-decoration: none; }
 
-@media (min-width: 480px) { .site-overlay .close { top: 40px; right: 10px; }
-  .site-overlay__menu ul li a { font-size: 30px; }
+@media (min-width: 480px) { .site-overlay__menu ul li a { font-size: 30px; }
   .site-overlay p { font-size: 30px; margin-bottom: 40px; } }
 
 @media (min-width: 768px) { .site-overlay__menu ul li a { font-size: 30px; padding: 10px; }
@@ -456,6 +472,10 @@ form input[type="checkbox"]:checked:focus + label:before, form input[type="check
 @media (min-width: 1400px) { .site-overlay__menu ul li a { font-size: 60px; padding: 15px; } }
 
 .site-footer { background-color: #3f0e19; padding: 30px 0; }
+
+.site-footer a { color: #FFF; text-decoration: underline; }
+
+.site-footer a:hover { color: #FFF; text-decoration: none; }
 
 .site-footer__social-icons { float: left; position: relative; margin: 0; padding: 0; width: 100%; display: block; text-align: center; margin-top: 20px; }
 

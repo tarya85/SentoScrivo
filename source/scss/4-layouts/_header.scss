@@ -118,6 +118,9 @@
 			li{
 				display:inline;
 				position:relative;
+				padding:30px 0px;
+				margin:0 10px;
+				background:transparent;
 
 				a{
 					display:inline-block;
@@ -135,33 +138,46 @@
 
 			li.current-menu-item{
 
-				a:before{
+				&:before{
 					content:'';
 					position:absolute;
 					top:0;
 					left:50%;
 					margin-left:-1px;
 					width:2px;
-					height:30px;
+					height:25px;
 					background-color:$c-white;
+					transition-property: background-color;
+    				transition-duration: 0.3s;
+
 				}
 
-				a:after{
+				
+
+				&:after{
 					content:'';
 					position:absolute;
 					bottom:0;
 					left:50%;
 					margin-left:-1px;
 					width:2px;
-					height:30px;
+					height:25px;
 					background-color:$c-white;
 					transition-property: background-color;
     				transition-duration: 0.3s;
 				}
 
+				&:hover:before,&:hover:after{
+					background-color:$c-dark-red;
+				}
+
 				a:hover:before,a:hover:after{
 					background-color:$c-dark-red;
 				}
+			}
+
+			li.active > a{
+				color:$c-dark-red!important;
 			}
 		}
 	}
@@ -185,16 +201,18 @@
 	.site-header__menu{
 
 
-		ul li a{
+		ul li {
+		
+			a{
 			padding:20px 10px;
 			color:$c-red;
 
-			&:hover{
-				color:$c-dark-red;
+				&:hover{
+					color:$c-dark-red;
+				}
 			}
 
 			&:before,&:after{
-				height:15px;
 				background-color:$c-red;
 			}
 		}
@@ -304,6 +322,63 @@
 
 	.site-header .site-header__menu ul{
 		display:block;
+
+		ul{
+			display:none;
+			position: absolute;
+			width: inherit;
+			margin:0 0 0 -125px;
+			padding:10px 0;
+			top:80px;
+			left:50%;
+			width:250px;
+			background-color:$c-dark-red;
+			z-index:2;
+
+			&:before{
+				content:'';
+				z-index:2;
+				display:block;
+				position:absolute;
+				top:-10px;
+				left:50%;
+				margin:0 0 0 -10px;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 10px 10px 10px;
+				border-color: transparent transparent $c-dark-red transparent;
+			}
+
+			li {
+				display:inline-block;
+				margin:0;
+				padding:0;
+				display:block;
+				width:100%;
+				
+				&:before,&:after{
+					display:none;
+				}
+
+				a{
+					margin:0;
+					padding:5px 10px!important;
+					text-align:center;
+					display:block;
+					width:100%;
+					color:$c-white!important;
+
+					&:hover{
+						color:darken($c-white,20)!important;
+					}
+				}
+			}
+		}
+
+		li:hover ul{
+			display: block;
+		}
 	}
 
 

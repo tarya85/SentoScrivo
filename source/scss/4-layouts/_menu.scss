@@ -1,13 +1,25 @@
 .site-overlay {
     height: 100%;
-    width: 0;
+    width: 100%;
     position: fixed;
     z-index: 12345;
     left: 0;
     top: 0;
     background-color: $c-dark-red;
     overflow-x: hidden;
-    transition: 0.5s;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.6s, visibility 0s 0.6s;
+    transition: transform 0.6s, visibility 0s 0.6s;
+    visibility: hidden;
+
+    &.opened{
+        visibility: visible;
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        -webkit-transition: -webkit-transform 0.6s;
+        transition: transform 0.6s;
+    }
 }
 
 
@@ -27,7 +39,8 @@
     margin:0 auto;
 
     ul{
-        margin:75px 0 0 0 ;
+        margin:80px 0 0 0;
+        padding:0 5%;
         text-align:center;
 
         li{
@@ -39,7 +52,7 @@
                 text-decoration: none;
                 font-family:$headings-font-family;
                 font-size: $font-size-h3;
-                line-height:1;
+                line-height:1.1;
                 text-transform: uppercase;
                 color: $c-white;
                 display: inline-block;
@@ -49,6 +62,15 @@
                 &:hover{
                      color: $c-red;
                      background:transparent;
+                }
+            }
+
+            ul{
+                margin:0;
+
+                li a{
+                    font-size:18px;
+                    text-transform: none;
                 }
             }
 
@@ -66,7 +88,7 @@
 .site-overlay {
     .close {
         position: absolute;
-        top: 20px;
+        top: 10px;
         right: 10px;
         font-size:$font-size-h3;
         line-height:1;
@@ -126,10 +148,7 @@
 //  Small devices (mobile, 480px and up)
 //
 @media (min-width: $screen-xs-min) {
-    .site-overlay .close {
-        top: 40px;
-        right: 10px;
-    }
+
 
     .site-overlay__menu ul li a {
         font-size: $font-size-h2;
