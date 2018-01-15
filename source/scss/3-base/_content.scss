@@ -82,7 +82,12 @@
 		background-color:rgba(255,255,255,0.8);
 		border-bottom:2px solid $c-red;
 		padding:5%;
+		transition-property: background-color;
+		transition-duration: 0.3s;
 
+		&:hover{
+			background-color:rgba(255,255,255,0.95);
+		}
 
 	}
 

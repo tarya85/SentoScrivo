@@ -125,13 +125,13 @@
 				a{
 					display:inline-block;
 					position:relative;
-					padding:30px 10px;
+					padding:30px 0px;
 					color:$c-white;
 					background:transparent;
 					font-size:$font-base-size;
 
 					&:hover{
-						color:$c-dark-red;
+						color:darken($c-white,30);
 					}
 				}
 			}
@@ -168,22 +168,25 @@
 				}
 
 				&:hover:before,&:hover:after{
-					background-color:$c-dark-red;
+					background-color:darken($c-white,30);
 				}
+				
 
 				a:hover:before,a:hover:after{
-					background-color:$c-dark-red;
+					background-color:darken($c-white,30);
 				}
 			}
 
 			li.active > a{
-				color:$c-dark-red!important;
+				color:darken($c-white,30)!important;
 			}
 		}
 	}
 
 
 }
+
+
 
 .site-header.fixed-header{
 	background-color:rgba(255,255,255,0.9);
@@ -204,7 +207,7 @@
 		ul li {
 		
 			a{
-			padding:20px 10px;
+			padding:20px 0px;
 			color:$c-red;
 
 				&:hover{
@@ -220,7 +223,32 @@
 
 }
 
+.site-content-heading{
+	@include default-floating;
+	z-index:1;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	padding-top:250px;
 
+	h1,h2{
+		text-align:center;
+		text-transform: uppercase;
+		color:$c-white;
+	}
+
+	h1{
+		font-size:$font-size-h2-small;
+		font-weight:$font-regular;
+
+	}
+
+	h2{
+		font-style:italic;
+		font-size:18px;
+		font-family:$font-base-family;
+	}
+}
 
 
 .site-breadcrumb{
@@ -290,8 +318,9 @@
 	}
 
 	
-
-	
+	.site-content-heading h1{
+			font-size:$font-size-h2;
+	}
 
 }
 
@@ -361,6 +390,8 @@
 					display:none;
 				}
 
+				
+
 				a{
 					margin:0;
 					padding:5px 10px!important;
@@ -370,8 +401,12 @@
 					color:$c-white!important;
 
 					&:hover{
-						color:darken($c-white,20)!important;
+						color:darken($c-white,30)!important;
 					}
+				}
+
+				&.current-menu-item > a{
+					color:darken($c-white,30)!important;
 				}
 			}
 		}
@@ -387,7 +422,8 @@
 	}
 
 	.site-header .site-header__menu ul li a{
-		font-size:15px;
+		font-size:$font-base-size;
+		padding: 30px 0px;
 	}
 
 	
@@ -403,7 +439,8 @@
 		margin-top:30px;
 
 		ul li a{
-			font-size:$font-base-size;
+			font-size:16px;
+			padding: 30px 10px;
 		}
 	}
 

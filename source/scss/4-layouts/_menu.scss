@@ -60,7 +60,7 @@
                 background:transparent;
 
                 &:hover{
-                     color: $c-red;
+                    color:darken($c-white,30)!important;
                      background:transparent;
                 }
             }
@@ -71,15 +71,49 @@
                 li a{
                     font-size:18px;
                     text-transform: none;
+                    padding:6px 10px;
+
+                    &:hover{
+                        color:darken($c-white,30)!important;
+                         background:transparent;
+                    }
                 }
+
+                li.current-menu-item > a{
+                    color: $c-red;
+
+                    &:hover{
+                        color:darken($c-white,30)!important;
+                         background:transparent;
+                    }
+        
+                }
+
             }
 
         }
 
-        li.current-menu-item a{
+        li.current-menu-item > a{
             color: $c-red;
 
         }
+
+        li.menu-item-has-children {
+            
+            & > a{
+                padding-left:30px;
+            }
+        
+            & > a:after{
+                @include icomoon;
+                content:"\e904";
+                position:relative;
+                margin:0 0 0 10px;
+                font-size:$font-size-h4;
+                font-weight:$font-heavy;
+            }
+        }
+
     }
 
 }

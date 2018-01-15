@@ -63,23 +63,50 @@ p, ul, ol, blockquote{
 
 
 
-.entry-content ul{
-    list-style-type: disc;
-    padding-left:20px;
+.site-content .content-wrapper .one ul,.entry-content ul{
+    //list-style-type: disc;
+    list-style: none;
+    padding:0;
+    margin:0 0 40px 0;
 
     li{
-        padding-left:20px;
         margin-bottom:10px;
+
+        &:before {
+            content: "\2022"; 
+            color: $c-red;
+            display: block; 
+            float:left;
+            margin-right:10px;
+            font-size:$font-size-h3;
+            line-height:1;
+        }
     }
+
 }
 
-.entry-content ol{
-    list-style-type: decimal;
-    padding-left:20px;
+.site-content .content-wrapper .one  ol,.entry-content ol{
+    //list-style-type: decimal;
+    list-style: none;
+    counter-reset: li;
+    padding:0;
+    margin:0 0 40px 0;
     
     li{
-        padding-left:20px;
+        padding-left:12px;
         margin-bottom:10px;
+        counter-increment: li;
+
+        &:before {
+            content: counter(li); 
+            color: $c-red;
+            display: block; 
+            float:left;
+            margin-right:10px;
+            font-size:$font-size-h4;
+            line-height:1;
+
+        }
     }
 }
 
@@ -160,6 +187,27 @@ sup {
         left:0;
 
     }
+}
+
+.subtitle-border{
+    @extend .subtitle;
+    margin-bottom:40px;
+
+    &:after{
+        margin-left:-50px;
+        left:50%;
+        width:100px;
+        bottom:0;
+    }
+
+}
+
+span.red{
+    color:$c-red;
+}
+
+span.bigger{
+    font-size:150%;
 }
 
 .alignCenter .subtitle:after{

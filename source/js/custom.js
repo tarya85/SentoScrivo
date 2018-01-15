@@ -44,7 +44,8 @@ jQuery(document).ready(function ($) {
     });
 
     $(window).scroll(function () {
-        if ($(window).scrollTop() >= ($('.site-header').outerHeight(true))) {
+        //if ($(window).scrollTop() >= ($('.site-header').outerHeight(true))) {
+        if ($(window).scrollTop() >= 50) {
             $('.site-header').addClass('fixed-header');
             $('.site-header .site-top').fadeOut(0);
 

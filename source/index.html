@@ -37,29 +37,23 @@
       "@context": "http://schema.org",
       "@type": "Organization",
       "name": "Sentoscrivo Soc. Coop.",
-      "legalName": "Sentoscrivo Soc. Coop.",
-      "description": "",
+       "legalName": "SentoScrivo Società Cooperativa",       "description": "Dire, stenotipare, elaborare, lettera, documento",
       "url": "https://sentoscrivo.it/",
-      "logo": "./images/logo-sentoscrivo.svg",
-      "email": "sentoscrivo@sentoscrivo.it",
-      "telephone": "+39 02 54108571"
-      "faxNumber": "+39 02 45497991",
-      "address": {
+      "logo": "https://sentoscrivo.it/wp-content/themes/sentoscrivo/images/logo-sentoscrivo.svg",
+       "email": "sentoscrivo@sentoscrivo.it",        "telephone": "+39 02/54108571",        "faxNumber": "+39 02/45497991",       	  "address": {
         "@type": "PostalAddress",
         "streetAddress": "Via Podgora 3",
         "addressLocality": "Milano",
         "addressRegion": "IT",
         "postalCode": "20122",
         "addressCountry": "IT"
-      },
-      "contactPoint": {
+      },      "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+39 02 54108571",
+        "telephone": "+39 02/54108571",
         "contactType": "customer service",
         "areaServed": "IT",
         "email": "sentoscrivo@sentoscrivo.it"
-      }
-    }
+      }    }
   </script>
 </head>
 
@@ -113,13 +107,13 @@
           <li>
             <a href="cooperativa.html">La cooperativa</a>
           </li>
-          <li>
+          <li class="menu-item-has-children">
             <a href="servizi.html">Servizi</a>
             <ul>
               <li >
                 <a href="servizio.html">Stenotipia</a>
               </li>
-              <li class="current-menu-item">
+              <li>
                 <a href="servizio.html">Trascrizioni</a>
               </li>
               <li>
@@ -163,7 +157,7 @@
           <li>
             <a href="cooperativa.html">La cooperativa</a>
           </li>
-          <li>
+          <li class="menu-item-has-children">
             <a href="servizi.html">Servizi</a>
             <ul>
               <li>
@@ -257,43 +251,55 @@
   </section>
 
   <section class="site-content module ">
-    <h2 class="hidden">Servizi</h2>
-    <article class="full-3-column" itemscope itemtype="http://schema.org/ProfessionalService" style="background-image:url(./images/servizio01.jpg)">
-      <div class="container alignCenter module2">
-        <h3 itemprop="name">stenotipia</h3>
-        <p itemprop="description">Servizi di stenotipia o di trascrizione veloce da remoto o in loco di riunioni e CdA. </p>
-      </div>
-    </article>
-    <article class="full-3-column" itemscope itemtype="http://schema.org/ProfessionalService" style="background-image:url(./images/servizio02.jpg)">
-      <div class="container alignCenter module2">
-        <h3 itemprop="name">TRASCRIZIONI</h3>
-        <p itemprop="description">Trascrizione di interviste, lezioni e discussioni di gruppo e testualizzazione di conferenze. </p>
-      </div>
-    </article>
-    <article class="full-3-column" itemscope itemtype="http://schema.org/ProfessionalService" style="background-image:url(./images/servizio03.jpg)">
-      <div class="container alignCenter module2">
-        <h3 itemprop="name">supporto audio per eventi</h3>
-        <p itemprop="description">Allestimento per la registrazione di eventi in formato digitale con successiva trascrizione.</p>
-      </div>
-    </article>
-    <article class="full-3-column" itemscope itemtype="http://schema.org/ProfessionalService" style="background-image:url(./images/servizio04.jpg)">
-      <div class="container alignCenter module2">
-        <h3 itemprop="name">data entry</h3>
-        <p itemprop="description">Data entry, dematerializzazione documenti e archiviazione, per enti pubblici e privati. </p>
-      </div>
-    </article>
-    <article class="full-3-column" itemscope itemtype="http://schema.org/ProfessionalService" style="background-image:url(./images/servizio05.jpg)">
-      <div class="container alignCenter module2">
-        <h3 itemprop="name">intercettazioni</h3>
-        <p itemprop="description">Decriptazione file audio e trascrizione di intercettazioni telefoniche e ambientali. </p>
-      </div>
-    </article>
-    <article class="full-3-column " itemscope itemtype="http://schema.org/ProfessionalService" style="background-image:url(./images/servizio06.jpg)">
-      <div class="container alignCenter module2">
-        <h3 itemprop="name">sottotitolazione</h3>
-        <p itemprop="description">Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
-      </div>
-    </article>
+      <h2 class="hidden">Servizi</h2>
+      <article class="full-3-column" itemscope itemtype="http://schema.org/Service" style="background-image:url(./images/servizio01.jpg)">
+          <a href="servizio.html">
+              <div class="container alignCenter module2">
+                  <h3 itemprop="name">stenotipia</h3>
+                  <p itemprop="description">Servizi di stenotipia o di trascrizione veloce da remoto o in loco di riunioni e CdA. </p>
+              </div>
+          </a>
+      </article>
+      <article class="full-3-column" itemscope itemtype="http://schema.org/Service" style="background-image:url(./images/servizio02.jpg)">
+          <a href="servizio.html">
+              <div class="container alignCenter module2">
+                  <h3 itemprop="name">TRASCRIZIONI</h3>
+                  <p itemprop="description">Trascrizione di interviste, lezioni e discussioni di gruppo e testualizzazione di conferenze. </p>
+              </div>
+          </a>
+      </article>
+      <article class="full-3-column" itemscope itemtype="http://schema.org/Service" style="background-image:url(./images/servizio03.jpg)">
+          <a href="servizio.html">
+                 <div class="container alignCenter module2">
+                  <h3 itemprop="name">supporto audio per eventi</h3>
+                  <p itemprop="description">Allestimento per la registrazione di eventi in formato digitale con successiva trascrizione.</p>
+              </div>
+          </a>
+      </article>
+      <article class="full-3-column" itemscope itemtype="http://schema.org/Service" style="background-image:url(./images/servizio04.jpg)">
+          <a href="servizio.html">
+               <div class="container alignCenter module2">
+                  <h3 itemprop="name">data entry</h3>
+                  <p itemprop="description">Data entry, dematerializzazione documenti e archiviazione, per enti pubblici e privati. </p>
+              </div>
+          </a>
+      </article>
+      <article class="full-3-column" itemscope itemtype="http://schema.org/Service" style="background-image:url(./images/servizio05.jpg)">
+          <a href="servizio.html">
+              <div class="container alignCenter module2">
+                  <h3 itemprop="name">intercettazioni</h3>
+                  <p itemprop="description">Decriptazione file audio e trascrizione di intercettazioni telefoniche e ambientali. </p>
+              </div>
+          </a>
+      </article>
+      <article class="full-3-column " itemscope itemtype="http://schema.org/Service" style="background-image:url(./images/servizio06.jpg)">
+          <a href="servizio.html">
+              <div class="container alignCenter module2">
+                  <h3 itemprop="name">sottotitolazione</h3>
+                  <p itemprop="description">Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+              </div>
+          </a>
+      </article>
   </section>
 
 
@@ -391,7 +397,7 @@
       <ul class="site-footer__social-icons">
         <li>
           <a href="#" target="_blank" title="Pagina Linkedin">
-            <i class="icon-linkedin" aria-hidden="true"></i>
+            <i class="icon-linkedin-bordered" aria-hidden="true"></i>
             <span class="hidden">Linkedin</span>
           </a>
         </li>
