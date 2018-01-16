@@ -5,7 +5,7 @@
 }
 
 
-.site-contacts {
+.site-table.site-contacts {
     @include default-floating;
 
     h4{
@@ -14,13 +14,9 @@
         font-weight:$font-bold;
     }
 
-    .col1,.col2{
-        @include default-floating;
-        padding:50px 5%;
-    }
 }
 
-.site-contacts .col1{
+.site-table.site-contacts .row .col1{
     background-repeat:no-repeat;
     background-size:cover;
     background-position: center center;
@@ -48,34 +44,10 @@
 //  Small devices (tablets, 970px and up)
 //
 @media (min-width: $screen-md-min) {
-    .site-contacts{
-        display: table;
-        float:none;
 
-        .row {
-            display: table-row;
-            float:none;
-        }
-
-        .col1{
-            display: table-cell;
-            vertical-align: top;
-            float:none;
-            width:33.33%;
-            margin:0;
-            padding:3%;
-        }
-
-        .col2{
-            display: table-cell;
-            vertical-align: top;
-            float:none;
-            width:66.67%;
-            margin:0;
-            padding:3%;
-        }
+    .site-table.site-contacts .row .col2{
+        padding:3%;
     }
-
 
 }
 

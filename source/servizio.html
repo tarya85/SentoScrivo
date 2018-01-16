@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>SentoScrivo Soc. Coop. - stenotipia, trascrizione e indagini difensive</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="css/main.min.css" media="screen">
 
     <link href="./favicon.ico" rel="SHORTCUT ICON">
@@ -243,7 +244,7 @@
                 <p class="alignCenter">
                     <span class="subtitle">LA NOSTRA CONSULENZA ALLE INDAGINI DIFENSIVE</span>
                 </p>
-                <h2>PROFESSIONISTI PER STUDI LEGALI</h2>
+                <h2 class="alignCenter">PROFESSIONISTI PER STUDI LEGALI</h2>
                 <p>
                     Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna justo,
                     lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat.
@@ -271,19 +272,19 @@
             <nav class="site-content-navigation">
                 <ul>
                     <li rel="prev">
-                        <a href="servizio.html">
+                        <a href="servizio.html" title="Precendente">
                             <i class="icon-prev" aria-hidden="true"></i>
                             <span class="screen-reader-text">Precendente</span>
                         </a>
                     </li>
                     <li>
-                        <a href="servizio.html">
+                        <a href="servizio.html" title="Torna ai servizi">
                             <i class="icon-back" aria-hidden="true"></i>
                             <span class="screen-reader-text">Torna ai servizi</span>
                         </a>
                     </li>
                     <li rel="next">
-                        <a href="servizio.html">
+                        <a href="servizio.html" title="Successivo">
                             <i class="icon-next" aria-hidden="true"></i>
                             <span class="screen-reader-text">Successivo</span>
                         </a>
@@ -297,31 +298,31 @@
             </h4>
             <ul class="social-buttons">
                 <li>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.google.com/" target="_blank" title="Share on Facebook">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.google.com/" target="_blank" title="Condividi su Facebook">
                         <i class="icon-facebook" aria-hidden="true"></i>
                         <span class="screen-reader-text">Facebook</span>
                     </a>
                 </li>
                 <li>
-                    <a href="https://twitter.com/intent/tweet?url=http://www.google.com/" target="_blank" title="Share on Twitter">
+                    <a href="https://twitter.com/intent/tweet?url=http://www.google.com/" target="_blank" title="Condividi su Twitter">
                         <i class="icon-twitter" aria-hidden="true"></i>
                         <span class="screen-reader-text">Twitter</span>
                     </a>
                 </li>
                 <li>
-                    <a href="https://plus.google.com/share?url=http://www.google.com/" target="_blank" title="Share on Googleplus">
+                    <a href="https://plus.google.com/share?url=http://www.google.com/" target="_blank" title="Condividi su Googleplus">
                         <i class="icon-googleplus" aria-hidden="true"></i>
                         <span class="screen-reader-text">Googleplus</span>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/cws/share?url=http%3A%2F%2Fgoogle.com" target="_blank" title="Share on Linkedin">
+                    <a href="https://www.linkedin.com/cws/share?url=http%3A%2F%2Fgoogle.com" target="_blank" title="Condividi su Linkedin">
                         <i class="icon-linkedin" aria-hidden="true"></i>
                         <span class="screen-reader-text">Linkedin</span>
                     </a>
                 </li>
                 <li>
-                    <a href="mailto:?subject=EW-Shopp?body=http://www.google.com/" target="_blank" title="Share by Email">
+                    <a href="mailto:?subject=EW-Shopp?body=http://www.google.com/" target="_blank" title="Condividi per Email">
                         <i class="icon-email-full" aria-hidden="true"></i>
                         <span class="screen-reader-text">Email</span>
                     </a>
@@ -329,35 +330,55 @@
             </ul>
         </article>
 
-        <nav class="site-content__service-navigation">
-            <ul>
-                <li style="background-image:url(../images/stenotipia.jpg);">
-                    <a href="servizio.html">stenotipia
-                        <i class="icon-next" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li style="background-image:url(../images/intercettazioni.jpg);">
-                    <a href="servizio.html">intercettazioni
-                        <i class="icon-next" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li style="background-image:url(../images/servizi-tecnici-audio.jpg);">
-                    <a href="servizio.html">servizi tecnici audio
-                        <i class="icon-next" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li style="background-image:url(../images/sottotitolazione.jpg);">
-                    <a href="servizio.html">sottotitolazione
-                        <i class="icon-next" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li style="background-image:url(../images/trascrizioni.jpg);">
-                    <a href="servizio.html">trascrizione / data entry
-                        <i class="icon-next" aria-hidden="true"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <div class="site-content__service-navigation">
+            <nav>
+                <ul>
+                    <li style="background-image:url(../images/stenotipia.jpg);">
+                        <a href="servizio.html">stenotipia
+                                <span class="freccia"><i class="icon-arrow-right" aria-hidden="true"></i></span>
+                        </a>
+                    </li>
+                    <li style="background-image:url(../images/intercettazioni.jpg);">
+                        <a href="servizio.html">intercettazioni <span class="freccia"><i class="icon-arrow-right" aria-hidden="true"></i></span>
+                        </a>
+                        
+                    </li>
+                    <li style="background-image:url(../images/servizi-tecnici-audio.jpg);">
+                        <a href="servizio.html">servizi tecnici audio
+                                <span class="freccia"><i class="icon-arrow-right" aria-hidden="true"></i></span>
+                        </a>
+                    </li>
+                    <li style="background-image:url(../images/sottotitolazione.jpg);">
+                        <a href="servizio.html">sottotitolazione
+                                <span class="freccia"><i class="icon-arrow-right" aria-hidden="true"></i></span>
+                        </a>
+                    </li>
+                    <li style="background-image:url(../images/trascrizioni.jpg);">
+                        <a href="servizio.html">trascrizione / data entry
+                                <span class="freccia"><i class="icon-arrow-right" aria-hidden="true"></i></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="site-banner module">
+                <h3 class="alignCenter">
+                    <span class="subtitle">Ti serve una consulenza?</span>
+                </h3>
+                <h4>Richiedici un preventivo</h4>
+
+                <a href="richiedi-preventivo.html"><img src="images/banner.jpg" alt="Richiedi un preventivo" /></a>
+
+                <a href="richiedi-preventivo.html">
+                    <div class="container alignCenter module2">
+                        <h5 class="alignCenter"><span class="subtitle">iNVIACI IL TUO FILE AUDIO</span></h5>
+                        <p>Compila il nostro preventivatore e ti risponderemo con una valutazione tecnica.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        
     </section>
 
     <aside class="site-contacts module">
@@ -466,6 +487,7 @@
     </script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/g/jquery@1.11.3,jquery.easing@1.3(jquery.easing.1.3.min.js)"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="js/bundle.min.js"></script>
 
 </body>

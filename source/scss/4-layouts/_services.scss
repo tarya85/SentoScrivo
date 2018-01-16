@@ -57,6 +57,8 @@ ul.social-buttons{
                 &:hover{
                     color:$c-red;
                 }
+
+                
             }
         }
     }
@@ -72,23 +74,29 @@ ul.social-buttons{
 }
 
 
-.site-content__service-navigation ul {
-    margin:0;
+.site-content__service-navigation  {
+    padding:0 5%;
+
+    ul{
+        margin:0;
 
         li{
             border-bottom:1px solid $c-white;
             background-repeat: no-repeat;
             background-position: center;
             background-size: 100% auto;
+            position:relative;
 
 
             a{
+                    position:relative;
                     color:$c-white;
                     text-transform: uppercase;
                     font-size:$font-size-h4;
                     font-family:$headings-font-family;
                     font-weight:$font-light;
-                    padding:50px 5%;
+                    line-height:1.1;
+                    padding:50px 50px 50px 20px;
                     display:block;
                     background-color:rgba(0,0,0,0);
                     transition-property: background-color;
@@ -97,8 +105,68 @@ ul.social-buttons{
                     &:hover{
                         background-color:rgba(0,0,0,0.5);
                     }
+
+                    span.freccia{
+                        display:block;
+                        position:absolute;
+                        top:50%;
+                        right:10px;
+                        padding:0 5px;
+                        margin:-12px 0 0 0;
+                        
+                    }
             }
         }
+    }
+}
+
+.site-banner{
+    @include default-floating;
+    margin:40px 0;
+
+    img{
+        width:100%;
+        margin:0;
+        height:auto;
+        position: relative;
+    }
+
+    h4{
+        text-transform: uppercase;
+        color:$c-dark-red;
+        font-size:$font-size-h2-small;
+        text-align:center;
+    }
+
+    .container{
+        @include default-floating;
+        width:90%;
+        background-color:$c-white;
+        padding:5%;
+        margin:-20% 5% 0 5%;
+        border-bottom:2px solid $c-red;
+
+        &:hover{
+            background-color:darken($c-white,2);
+        }
+
+        h5 {
+            margin:0;
+            span{
+                font-size:$font-size-h3-small;
+                font-style:normal;
+                color:$c-dark-red;
+
+                &:after {
+                    bottom:-15px;
+                }
+            }
+        }
+
+        p{
+            text-align:center;
+        }
+    }
 }
 
 //
@@ -106,7 +174,9 @@ ul.social-buttons{
 //
 @media (min-width: $screen-xs-min) {
     
-    
+    .site-content__service-navigation  {
+        padding:0 10%;
+    }
 }
 
 
@@ -116,7 +186,9 @@ ul.social-buttons{
 //  Large devices (large desktops, 768px and up)
 //
 @media (min-width: $screen-sm-min) {
-    
+    .site-content__service-navigation  {
+        padding:0 15%;
+    }
 
 }
 
@@ -125,17 +197,16 @@ ul.social-buttons{
 //
 @media (min-width: $screen-md-min) {
     .site-content__service{
-        width:70%;
+        width:65%;
     }
     
     .site-content__service-navigation{
-        width:30%;
+        width:35%;
         margin:0;
+        padding:0;
     }
 
-    .site-content__service-navigation ul li a{
-            padding:70px 30px;
-    }
+    
 
 }
 
@@ -146,6 +217,17 @@ ul.social-buttons{
 
     .site-content__service-navigation ul li a{
         font-size:$font-size-h3;
+        padding:70px 50px 70px 30px;
     }
+
+    .site-content__service{
+        width:70%;
+    }
+    
+    .site-content__service-navigation{
+        width:30%;
+    }
+
+
 
 }

@@ -28,6 +28,7 @@
 }
 
 
+
 .site-top{
 	padding:0;
 	background-repeat: no-repeat;
@@ -73,7 +74,7 @@
 	background-size:cover;
 	background-repeat: no-repeat;
 	height:auto;
-	padding:200px 5% 50px 5%;
+	padding:250px 5% 50px 5%;
 	border:1px solid $c-white;
 
 
@@ -105,10 +106,27 @@
 	.full-column-image img{
 		width:100%;
 		height:auto;
+		position: relative;
+		float:left;
 	}
 
 
 }
+
+.site-table {
+    @include default-floating;
+
+    .row{
+		@include default-floating;
+
+		.col1,.col2{
+			@include default-floating;
+			padding:50px 5%;
+		}
+	}
+    
+}
+
 
 .come-in {
   transform: translateY(150px);
@@ -185,6 +203,18 @@
 	margin-top:60px!important;
 }
 
+.marginTopDouble{
+	margin-top:60px!important;
+}
+
+.marginBottomDouble{
+	margin-bottom:60px!important;
+}
+
+.noPadding{
+	padding:0!important;
+}
+
 @keyframes come-in {
   to { transform: translateY(0); }
 }
@@ -253,8 +283,9 @@
 }
 
 
+
 //
-//  Medium devices (desktops, 992px and up)
+//  Large devices (large desktops, 970px and up)
 //
 @media (min-width: $screen-md-min) {
 	.content-wrapper {
@@ -266,32 +297,14 @@
 		height:550px;
 	}
 
+	.marginTopDouble{
+		margin-top:120px!important;
+	}
 	
+	.marginBottomDouble{
+		margin-bottom:120px!important;
+	}
 
-
-}
-
-//
-//  Large devices (large desktops, 480px and up)
-//
-@media (min-width: $screen-xs-min) {
-
-
-}
-
-
-//
-//  Large devices (large desktops, 768px and up)
-//
-@media (min-width: $screen-sm-min) {
-
-
-}
-
-//
-//  Large devices (large desktops, 970px and up)
-//
-@media (min-width: $screen-md-min) {
 	.site-header.page404 .verticallyCentered{
 		max-width:700px;
 	}
@@ -317,6 +330,37 @@
 		
 	}
 
+	.site-table{
+        display: table;
+        float:none;
+
+        .row {
+            display: table-row;
+			float:none;
+			
+			.col1{
+				display: table-cell;
+				vertical-align: top;
+				float:none;
+				width:33.33%;
+				margin:0;
+				padding:3%;
+			}
+	
+			.col2{
+				display: table-cell;
+				vertical-align: top;
+				float:none;
+				width:66.67%;
+				margin:0;
+				padding:0;
+			}
+			
+        }
+
+        
+    }
+
 }
 
 //
@@ -332,7 +376,7 @@
 		.full-column-text{
 			position:absolute;
 			top:0;
-			left:0;
+			
 			width:55%;
 			z-index:2;
 
@@ -344,6 +388,20 @@
 		}
 
 		
+	}
+
+	.full-animated-columns:not(.inverted) .full-column-text{
+		left:0;
+	}
+
+	.full-animated-columns.inverted{
+		.full-column-image{
+			float:left;
+		}
+
+		.full-column-text{
+			right:0;
+		}
 	}
 
 	

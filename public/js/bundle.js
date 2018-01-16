@@ -216,6 +216,17 @@ $(window).load(function () {
 
 jQuery(document).ready(function ($) {
 
+    $(document).tooltip({
+        position: {
+            my: "center bottom-20",
+            at: "center top",
+            using: function using(position, feedback) {
+                $(this).css(position);
+                $("<div>").addClass("arrow").addClass(feedback.vertical).addClass(feedback.horizontal).appendTo(this);
+            }
+        }
+    });
+
     $('#searchform').submit(function (e) {
         var s = $(this).find("#s").val($.trim($(this).find("#s").val()));
         if (!s.val()) {

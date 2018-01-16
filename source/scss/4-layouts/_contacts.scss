@@ -1,0 +1,61 @@
+#mappa{
+    @include default-floating;
+    min-height:400px;
+    height:400px;
+    background-color:grey;
+}
+
+
+.site-contact_details{
+    h3{
+        @include default-floating;
+        color:$c-red;
+        font-style:italic;
+        font-size:$font-base-size;
+        margin-bottom:30px;
+        text-align:left;
+        text-transform: uppercase;
+    }
+
+    ul li i[class^="icon-"],ul li i[class*=" icon-"]{
+        color:$c-red;
+        line-height:1;
+        
+        margin:0 10px 2px 0;
+    }
+}
+
+//
+//  Small devices (mobile, 480px and up)
+//
+@media (min-width: $screen-xs-min) {
+
+
+}
+
+//
+//  Small devices (tablets, 768px and up)
+//
+@media (min-width: $screen-sm-min) {
+    #mappa{
+        height:500px;
+    }
+}
+
+
+//
+//  Medium devices (desktops, 992px and up)
+//
+@media (min-width: $screen-md-min) {
+
+    #mappa{
+        height:100vh;
+    }
+}
+
+//
+//  Large devices (large desktops, 1200px and up)
+//
+@media (min-width: $screen-lg-min) {
+
+}
