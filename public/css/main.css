@@ -310,7 +310,7 @@ a:focus { outline: none; }
   .full-animated-columns .full-column-image { position: relative; margin: 0; width: 50%; z-index: 1; float: left; }
   .site-table { display: table; float: none; }
   .site-table .row { display: table-row; float: none; }
-  .site-table .row .col1 { display: table-cell; vertical-align: top; float: none; width: 33.33%; margin: 0; padding: 3%; }
+  .site-table .row .col1 { display: table-cell; vertical-align: top; float: none; width: 33.33%; margin: 0; padding: 40px 3%; }
   .site-table .row .col2 { display: table-cell; vertical-align: top; float: none; width: 66.67%; margin: 0; padding: 0; }
   .full-3-column.texts, .full-2-column.texts, .full-4-column.texts { padding: 3% !important; } }
 
