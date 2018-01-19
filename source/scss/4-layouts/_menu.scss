@@ -93,7 +93,7 @@
 
         }
 
-        li.current-menu-item > a{
+        li.current-menu-item > a,li.current-menu-parent > a{
             color: $c-red;
 
         }

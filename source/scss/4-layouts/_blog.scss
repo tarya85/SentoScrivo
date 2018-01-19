@@ -203,66 +203,54 @@
 		display:inline-block;
 		width:auto!important;
 		margin:50px 0 0 0;
+
+		li{
+			border:0;
+			
+			a,a.prev,a.next{
+				color:$c-white;
+				background-color:$c-dark-red;
+				text-decoration: none;
+				display:block;
+				width:auto;
+				padding:14px 16px;
+				border:0;
+				font-size: $font-size-h4;
+				line-height: 1;
+				transition-property: background-color;
+				transition-duration: 0.3s;
+
+				&:hover{
+					color:$c-white;
+					background-color:$c-red;;
+					text-decoration: none;
+					border:0;
+				}
+			}
+
+			
+
+		}
+
+		li.current{
+			a{
+				color:$c-black;
+				background-color:transparent;
+				text-decoration: none;
+
+				&:hover{
+					color:$c-black;
+					background-color:transparent;
+					text-decoration: none;
+				}
+			}
+		}
 	}
 }
 
 
-.site-content.site-content_standard .site-pagination ul li:before {
-	content:'';
-	display:none;
-}
-.site-pagination a{
-	@include default-floating;
-	width:auto;
-	padding:14px 16px;
-	color:$c-red;
-	background:transparent;
-	border:0;
-	font-size: $font-size-h4;
-	line-height: 1;
-	text-decoration:none;
-	transition-property: background-color;
-    transition-duration: 0.3s;
-
-	&:hover{
-		background:transparent;
-		color:$c-white;
-		text-decoration:none;
-	}
-}
-
-.site-recent-projects .site-pagination a{
-	color:darken($c-red,15);
-
-	&:hover{
-		color:$c-white;
-	}
-}
-
-.site-pagination ul li > span.current{
-	@include default-floating;
-	width:auto;
-	padding:12px 16px;
-	color:$c-white;
-	background:transparent;
-	border:0;
-	font-size: $font-size-h4;
-	line-height: 1;
-	text-decoration:none;
-}
-
-.site-pagination ul li.current a{
-	color:$c-white;
-	background:transparent;
-	text-decoration:none;
 
 
-	&:hover{
-		color:$c-white;
-		background:transparent;
-		text-decoration:none;
-	}
-}
 
 
 

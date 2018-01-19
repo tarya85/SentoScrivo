@@ -66,6 +66,11 @@ ul.social-buttons{
 
 .site-content__service{
     padding:5%;
+
+    .rev_slider_wrapper{
+        @include default-floating;
+        margin-bottom:40px!important;
+    }
     
 }
 
@@ -81,6 +86,7 @@ ul.social-buttons{
         margin:0;
 
         li{
+            background-color:$c-black;
             border-bottom:1px solid $c-white;
             background-repeat: no-repeat;
             background-position: center;

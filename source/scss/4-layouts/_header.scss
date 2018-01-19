@@ -136,7 +136,7 @@
 				}
 			}
 
-			li.current-menu-item{
+			li.current-menu-item,li.current-menu-parent{
 
 				&:before{
 					content:'';
@@ -226,6 +226,7 @@
 .site-content-heading{
 	@include default-floating;
 	z-index:1;
+	background-color:$c-black;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size:cover;
@@ -254,6 +255,18 @@
 .site-breadcrumb{
 	@include default-floating;
 	padding:20px 0 40px 0;
+
+	p{
+		color:$c-white;
+
+		a{
+			color:$c-red;
+
+			a:hover{
+				color:$c-white;
+			}
+		}
+	}
 }
 
 
