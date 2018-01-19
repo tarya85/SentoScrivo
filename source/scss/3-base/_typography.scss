@@ -190,6 +190,10 @@ sup {
     }
 }
 
+h1 .subtitle, h2 .subtitle, h3 .subtitle, h4 .subtitle, h5 .subtitle, h6 .subtitle,.alignCenter .subtitle{
+    text-align:center;
+}
+
 .subtitle-border{
     @extend .subtitle;
     margin-bottom:40px;
@@ -211,7 +215,8 @@ span.bigger{
     font-size:150%;
 }
 
-.alignCenter .subtitle:after{
+h1 .subtitle:after, h2 .subtitle:after, h3 .subtitle:after, h4 .subtitle:after, h5 .subtitle:after, h6 .subtitle:after,.alignCenter .subtitle:after,
+{
     margin-left:-27px;
     left:50%;
 }
