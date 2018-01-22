@@ -70,14 +70,16 @@ p, ul, ol, blockquote{
     margin:0 0 40px 0;
 
     li{
+        padding-left:40px;
         margin-bottom:10px;
+
 
         &:before {
             content: "\2022"; 
             color: $c-red;
             display: block; 
             float:left;
-            margin-right:10px;
+            margin-left:-30px;
             font-size:$font-size-h3;
             line-height:1;
         }
@@ -93,16 +95,17 @@ p, ul, ol, blockquote{
     margin:0 0 40px 0;
     
     li{
-        padding-left:12px;
+        padding-left:40px;
         margin-bottom:10px;
         counter-increment: li;
+        
 
         &:before {
             content: counter(li); 
             color: $c-red;
             display: block; 
             float:left;
-            margin-right:10px;
+            margin-left:-30px;
             font-size:$font-size-h4;
             line-height:1;
 

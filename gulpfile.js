@@ -43,6 +43,11 @@ return gulp.src('source/*.html')
 .pipe(browserSync.stream());
 });
 
+gulp.task('copy-js', function() {
+  return gulp.src('source/js/lightbox.min.js')
+  .pipe(gulp.dest('public/js'))
+  .pipe(browserSync.stream());
+  });
 
 
 gulp.task('ie-styles', function() {
@@ -106,7 +111,7 @@ return del.sync('public');
 
 gulp.task('build', function () {
 runSequence('clean',
-  ['run-sass','build-js', 'images', 'fonts','copy-html','copy-favicon','ie-styles']
+  ['run-sass','build-js', 'images', 'fonts','copy-html','copy-favicon','ie-styles','copy-js']
 )
 })
 

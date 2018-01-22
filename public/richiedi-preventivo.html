@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SentoScrivo Soc. Coop. - stenotipia, trascrizione e indagini difensive</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/main.min.css" media="screen">
+
+    <link href="./favicon.ico" rel="SHORTCUT ICON">
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+
+    <meta name="format-detection" content="telephone=no">
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" />
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "Sentoscrivo Soc. Coop.",
+            "legalName": "SentoScrivo Società Cooperativa",
+            "description": "Dire, stenotipare, elaborare, lettera, documento",
+            "url": "https://sentoscrivo.it/",
+            "logo": "https://sentoscrivo.it/wp-content/themes/sentoscrivo/images/logo-sentoscrivo.svg",
+            "email": "sentoscrivo@sentoscrivo.it",
+            "telephone": "+39 02/54108571",
+            "faxNumber": "+39 02/45497991",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Via Podgora 3",
+                "addressLocality": "Milano",
+                "addressRegion": "IT",
+                "postalCode": "20122",
+                "addressCountry": "IT"
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+39 02/54108571",
+                "contactType": "customer service",
+                "areaServed": "IT",
+                "email": "sentoscrivo@sentoscrivo.it"
+            }
+        }
+    </script>
+</head>
+
+<body itemtype="http://schema.org/WebPage" itemscope="">
+    <div class="site-loader"></div>
+    <div id="top" class="site-content"></div>
+    <header class="site-header" itemtype="http://schema.org/WPHeader" itemscope="">
+        <div class="site-top">
+            <div class="content-wrapper clear">
+                <p>
+                    <span>
+                        <a href="mailto:sentoscrivo@sentoscrivo.it?subject=Richiesta%20di%20informazioni">
+                            <i class="icon-email" aria-hidden="true"></i>sentoscrivo@sentoscrivo.it</a>
+                    </span>
+                    <span>
+                        <i class="icon-phone" aria-hidden="true"></i>+39 02 54108571</span>
+                    <span>
+                        <i class="icon-fax" aria-hidden="true"></i>+39 02 45497991</span>
+                </p>
+                <p class="alignRight">
+                    <a href="https://doc.sentoscrivo.it/" target="_blank">
+                        <i class="icon-users" aria-hidden="true"></i> Area clienti</a>
+                </p>
+
+            </div>
+        </div>
+        <div class="content-wrapper clear">
+            <div class="site-header__logo">
+                <a rel="home" href="index.html">
+                    <img src="images/logo-sentoscrivo-bianco.svg" alt="Sentoscrivo Soc. Coop." />
+                </a>
+            </div>
+
+            <div class="site-header__logo fixed">
+                <a rel="home" href="index.html">
+                    <img src="images/logo-sentoscrivo.svg" alt="Sentoscrivo Soc. Coop." />
+                </a>
+            </div>
+
+            <nav id="primary-menu" class="site-header__menu" aria-label="Primary Menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+
+                <a href="#" id="show_menu" class="button site-header__hamburger" title="Menu">
+                    <i class="icon-hamburger" aria-hidden="true"></i>
+                    <span class="hidden">Menu</span>
+                </a>
+
+                <ul id="top-menu" class="menu">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="cooperativa.html">La cooperativa</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="servizi.html">Servizi</a>
+                        <ul>
+                            <li>
+                                <a href="servizio.html">Stenotipia</a>
+                            </li>
+                            <li>
+                                <a href="servizio.html">Trascrizioni</a>
+                            </li>
+                            <li>
+                                <a href="servizio.html">Supporto audio per eventi</a>
+                            </li>
+                            <li>
+                                <a href="servizio.html">Data entry</a>
+                            </li>
+                            <li>
+                                <a href="servizio.html">Intercettazioni</a>
+                            </li>
+                            <li>
+                                <a href="servizio.html">Sottotitolazione</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="current-menu-item">
+                        <a href="richiedi-preventivo.html">Richiedi un preventivo</a>
+                    </li>
+                    <li>
+                        <a href="contatti.html">Contatti</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <div class="site-overlay">
+        <a href="javascript:void(0)" class="close" title="Chiudi">
+            <i class="icon-close" aria-hidden="true"></i>
+            <span class="hidden">Chiudi</span>
+        </a>
+
+        <div class="site-overlay__content">
+            <nav class="site-overlay__menu" aria-label="Primary Menu">
+                <ul class="menu">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="cooperativa.html">La cooperativa</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="servizi.html">Servizi</a>
+                        <ul>
+                            <li>
+                                <a href="servizio.html">Stenotipia</a>
+                            </li>
+                            <li>
+                                <a href="servizio.html">Trascrizioni</a>
+                            </li>
+                            <li>
+                                <a href="servizio.html">Supporto audio per eventi</a>
+                            </li>
+                            <li>
+                                <a href="servizio.html">Data entry</a>
+                            </li>
+                            <li>
+                                <a href="servizio.html">Intercettazioni</a>
+                            </li>
+                            <li>
+                                <a href="servizio.html">Sottotitolazione</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="current-menu-item">
+                        <a href="richiedi-preventivo.html">Richiedi un preventivo</a>
+                    </li>
+                    <li>
+                        <a href="contatti.html">Contatti</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+        </div>
+
+    </div>
+
+    <section class="site-content page hentry" role="main">
+        <header class="site-content-heading entry-header" style="background-image:url(images/testata-preventivatore.jpg)">
+            <div class="content-wrapper clear">
+                <h1 class="entry-title">RICHIEDI UN PREVENTIVO</h1>
+                <span class="subtitle-border"></span>
+                <h2>PER INFORMAZIONI SU TUTTI I NOSTRI SERVIZI</h2>
+
+                <div class="site-breadcrumb">
+                    <ol id="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                        <li class="home" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                            <a itemprop="item" href="index.html">
+                                <span itemprop="name">Home</span>
+                            </a>
+                            <meta itemprop="position" content="1">
+                        </li>
+                        <li>
+                            <span class="delimiter">&gt;</span>
+                        </li>
+                        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                            <span itemprop="name">Richiedi un preventivo</span>
+                            <meta itemprop="position" content="2">
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </header>
+
+    </section>
+
+    <section class="site-content">
+        <div class="content-wrapper clear">
+            <div class="one backgroundWhite bordered alignCenter">
+                <h2 style="text-align: center;">
+                    <span class="subtitle">TI SERVE UNA CONSULENZA DI TRASCRIZIONE?</span>
+                </h2>
+                <h2 style="text-align: center;">INVIACI UN ESEMPIO DI FILE AUDIO/immagine PER AVERE UN PREVENTIVO DETTAGLIATO</h2>
+                <p>Possiamo offrire un preventivo completo di tutte le specifiche, analizzando un esempio o l’intero file audio/immagine
+                    per servizi di verbalizzazione o trascrizione in formato digitale . I passaggi da seguire sono piuttosto
+                    semplici:
+                </p>
+                <ol>
+                    <li>Compilare il modulo di seguito inserendo tutti i campi obbligatori.</li>
+                    <li>Per l’invio del file audio o di immagini (ad esempio scansioni di documenti o screenshot di schermate
+                        dal cellulare/monitor) sarà necessario caricare i file su wetransfer e fornirci il link breve ricavato
+                        da wetransfer al termine del caricamento. Per caricare il file su wetransfer e aver il link breve
+                        sarà necessario seguire i passaggi dal 3 al 9.</li>
+                    <li>Andare sul sito
+                        <a href="https://wetransfer.com/" target="_blank" rel="noopener">https://wetransfer.com/</a>
+                    </li>
+                    <li>Cliccare sui tre puntini di fianco al tasto “trasferisci”.</li>
+                    <li>All’apertura delle opzioni selezionare la voce “invia come link”.</li>
+                    <li>Caricare il file e attendere il completamento del caricamento.</li>
+                    <li>Alla conclusione copiare il link riportato da wetransfer.</li>
+                    <li>Incollare il link nel campo corrispondente nel nostro preventivatore.</li>
+                    <li>Inviare a Sentoscrivo la rcihiesta di preventivo specificando evenutali note nel campo di testo libero.</li>
+                </ol>
+                <p>Sarete ricontattati il prima possibile da un nostro responsabile tramite email o numero di telefono, con
+                    un preventivo per il servizio richiesto.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <aside class="site-contacts site-table marginTop module">
+        <div class="row">
+            <div class="col1" style="background-image:url(http://localhost/sentoscrivo/wp-content/uploads/2018/01/sfondo-preventivatore.jpg);">
+                <h4>COMPILA IL MODULO PER UN PREVENTIVO</h4>
+                <p>Riceverai il preventivo dettagliato sulla base dell’analisi delle tue richieste, o verrai ricontattato da
+                    un nostro responsabile per maggiori chiarimenti e informazioni.
+                    <br>
+                    <br> Le voci contrassegnate dall’asterisco * sono obbligatorie per la richiesta di preventivo.</p>
+            </div>
+            <div class="col2">
+                <div role="form" class="wpcf7" id="wpcf7-f216-p209-o1" lang="it-IT" dir="ltr">
+                    <div class="screen-reader-response"></div>
+                    <form  method="post" class="wpcf7-form" novalidate="novalidate">
+                        <div style="display: none;">
+                            <input type="hidden" name="_wpcf7" value="216">
+                            <input type="hidden" name="_wpcf7_version" value="4.9.2">
+                            <input type="hidden" name="_wpcf7_locale" value="it_IT">
+                            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f216-p209-o1">
+                            <input type="hidden" name="_wpcf7_container_post" value="209">
+                        </div>
+                        <div class="one-half">
+                            <label for="quotation-name">Nome <span>*</span></label>
+                            <span class="wpcf7-form-control-wrap quotation-name">
+                                <input type="text" name="quotation-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                    id="quotation-name" aria-required="true" aria-invalid="false">
+                            </span>
+                        </div>
+                        <div class="one-half last">
+                            <label for="quotation-surname">Cognome <span>*</span></label>
+                            <span class="wpcf7-form-control-wrap quotation-surname">
+                                <input type="text" name="quotation-surname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                    id="quotation-surname" aria-required="true" aria-invalid="false">
+                            </span>
+                        </div>
+                        <div class="one-half">
+                            <label for="quotation-vat-number">N. di P.IVA (in caso di azienda)</label>
+                            <span class="wpcf7-form-control-wrap quotation-vat-number">
+                                <input type="text" name="quotation-vat-number" value="" size="40" class="wpcf7-form-control wpcf7-text"
+                                    id="quotation-vat-number" aria-invalid="false">
+                            </span>
+                        </div>
+                        <div class="one-half last">
+                            <label for="quotation-company">Ragione sociale (in caso di azienda)</label>
+                            <span class="wpcf7-form-control-wrap quotation-company">
+                                <input type="text" name="quotation-company" value="" size="40" class="wpcf7-form-control wpcf7-text"
+                                    id="quotation-company" aria-invalid="false">
+                            </span>
+                        </div>
+                        <div class="one-half">
+                            <label for="quotation-email">Email <span>*</span></label>
+                            <span class="wpcf7-form-control-wrap quotation-email">
+                                <input type="email" name="quotation-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                                    id="quotation-email" aria-required="true" aria-invalid="false">
+                            </span>
+                        </div>
+                        <div class="one-half last">
+                            <label for="quotation-role">Ruolo in azienda (in caso di azienda)</label>
+                            <span class="wpcf7-form-control-wrap quotation-role">
+                                <input type="text" name="quotation-role" value="" size="40" class="wpcf7-form-control wpcf7-text"
+                                    id="quotation-role" aria-invalid="false">
+                            </span>
+                        </div>
+                        <div class="one-half">
+                            <label for="quotation-phone">N. di telefono <span>*</span></label>
+                            <span class="wpcf7-form-control-wrap quotation-phone">
+                                <input type="text" name="quotation-phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                    id="quotation-phone" aria-required="true" aria-invalid="false">
+                            </span>
+                        </div>
+                        <div class="one-half last">
+                            <label for="quotation-service">Tipo di servizio da preventivare <span>*</span></label>
+                            <span class="wpcf7-form-control-wrap quotation-service">
+                                <div class="styled-select"><select name="quotation-service" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
+                                    id="quotation-service" aria-required="true" aria-invalid="false">
+                                    <option value="Stenotipia">Stenotipia</option>
+                                    <option value="Sottotitolazione">Sottotitolazione</option>
+                                    <option value="Indagini difensive">Indagini difensive</option>
+                                    <option value="Intercettazioni">Intercettazioni</option>
+                                    <option value="Servizi tecnici audio">Servizi tecnici audio</option>
+                                    <option value="Trascrizione/data entry">Trascrizione/data entry</option>
+                                </select></div>
+                            </span>
+                        </div>
+                        <div class="one-half">
+                            <label for="quotation-link">Link di Wetransfer <span>*</span></label>
+                            <span class="wpcf7-form-control-wrap quotation-link">
+                                <input type="url" name="quotation-link" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-url wpcf7-validates-as-required wpcf7-validates-as-url"
+                                    id="quotation-link" aria-required="true" aria-invalid="false">
+                            </span>
+                        </div>
+                        <div class="one-half last">
+                            <p>Clicca sull’immagine di lato per capire come ricavare il link di wetransfer prima di caricare il file da inviare. </p>
+                            <p><a href="images/immagine-tutorial-wetransfer.jpg" data-lightbox="zoom"><img class="alignRight" src="images/immagine-tutorial-wetransfer.jpg" alt ="" /></a></p>
+                        </div>
+                        <div class="one">
+                            <label for="quotation-notes">Note aggiuntive</label>
+                            <span class="wpcf7-form-control-wrap quotation-notes">
+                                <textarea name="quotation-notes" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea"
+                                    id="quotation-notes" aria-invalid="false"></textarea>
+                            </span>
+                            <br>
+                            <input type="checkbox" name="acconsento" value="1" class="wpcf7-form-control wpcf7-acceptance" id="acconsento" checked="checked"
+                                aria-invalid="false">
+                            <label for="acconsento" class="testo_privacy">Acconsento al trattamento dei dati personali ai sensi dell'art. 13 del D. Lgs. 30/06/2003 n.
+                                196 - Leggi la nostra
+                                <a href="http://localhost/sentoscrivo/privacy-policy/" target="_blank">Privacy Policy</a>
+                            </label>
+                        </div>
+                        <div class="one">
+                            <input type="submit" value="Invia richiesta di preventivo" class="wpcf7-form-control wpcf7-submit"
+                                id="submit">
+                            <span class="ajax-loader"></span>
+                        </div>
+                        <div class="wpcf7-response-output wpcf7-display-none"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+
+    <a href="#top" class="button scrollToTop" title="Torna su">
+        <i class="icon-arrow-up" aria-hidden="true"></i>
+        <span class="hidden">Torna su</span>
+    </a>
+
+    <footer class="site-footer" itemtype="http://schema.org/WPFooter" itemscope="">
+        <div class="content-wrapper clear">
+
+
+            <p>
+                SentoScrivo Società Cooperativa Via Podgora 3, 20122 Milano | Tel. 02/54108571 | Fax 02/45497991 | Cod.Fisc/Part.iva Registro
+                Imprese di Milano N&deg;11183640157 | R.E.A. N&deg;1443629 | Iscritta all'Albo Societ&agrave; Cooperative
+                con il N&deg;A105454 |
+                <a href="mailto:sentoscrivo@sentoscrivo.it?subject=Richiesta%20di%20informazioni">sentoscrivo@sentoscrivo.it</a> | PEC: sentoscrivo@pec.it |
+                <a href="https://sentoscrivo.it/privacy-policy/" target="_blank">Privacy Policy</a>
+                <br />Copyright &copy; 2017 | Powered by
+                <a href="https://digitalhive.it/" target="_blank" rel="nofollow">DigitalHive</a>
+            </p>
+
+            <ul class="site-footer__social-icons">
+                <li>
+                    <a href="#" target="_blank" title="Pagina Linkedin">
+                        <i class="icon-linkedin-bordered " aria-hidden="true"></i>
+                        <span class="hidden">Linkedin</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </footer>
+    <script type="text/javascript">
+        WebFontConfig = {
+            google: {
+                families: ['Merriweather+Sans:400,700:latin', 'Merriweather:400,700:latin']
+            }
+        };
+        (function () {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/g/jquery@1.11.3,jquery.easing@1.3(jquery.easing.1.3.min.js)"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/bundle.min.js"></script>
+
+</body>
+
+</html>

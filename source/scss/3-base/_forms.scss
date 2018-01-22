@@ -24,8 +24,29 @@ form label, form legend{
 	font-size:18px;
 	font-weight:$font-light;
 	margin-bottom:5px 0;
+
+	span{
+		color:$c-red;
+	}
 }
 
+.site-contacts form .one,.site-contacts form .one-half{
+	
+	p{
+		color:$c-black;
+		width:100%;
+		margin:0 0 20px 0;
+		float:left;
+
+		img{
+			width:100%;
+			max-width:100px;
+			border:2px solid $c-red;
+			float:left;
+		}
+	}
+
+}
 
 form span.wpcf7-form-control-wrap{
 	@include default-floating;
@@ -37,7 +58,7 @@ form span.wpcf7-form-control-wrap.accetto{
 
 
 
-form input, form textarea{
+form input, form textarea,form select{
 	@include default-floating;
 	border:0;
 	border-bottom:1px solid $c-black;
@@ -50,6 +71,31 @@ form input, form textarea{
 	font-size:$font-base-size;
 	@include border-radius(0);
 	text-shadow: none;
+}
+
+form select{
+	cursor:pointer;
+	-webkit-appearance: none;
+   -moz-appearance:    none;
+   appearance:         none;
+}
+
+
+form .styled-select{
+	@include default-floating;
+	
+
+	&:after{
+		@include icomoon;
+		content:"\e904";
+		position:absolute;
+		top:8px;
+		right:0;
+		color:$c-red;
+		font-size:20px;
+		font-weight:900;
+
+	}
 }
 
 form textarea{
@@ -364,7 +410,22 @@ form input[type="checkbox"]:not(:checked):focus + label:before {
 @media (min-width: $screen-lg-min) {
 
 
+	.site-contacts form .one,.site-contacts form .one-half{
+		
+		p:nth-child(1){
+			width:65%;
+			margin:0 0 20px 0;
+		}
 
+		p:nth-child(2){
+			width:30%;
+			float:right;
+			
+			img{
+				float:right;
+			}
+		}
+	}
 
 
 

@@ -33,6 +33,17 @@ body {
 	height:100%;
 }
 
+
+::selection {
+    background: $c-red; /* WebKit/Blink Browsers */
+    color:$c-white;
+  }
+  ::-moz-selection {
+    background: $c-red; /* Gecko Browsers */
+    color:$c-white;
+  }
+
+
 .screen-reader-text,.hidden,.visuallyhidden{display:none}
 
 img{
