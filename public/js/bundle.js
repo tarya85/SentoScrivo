@@ -235,8 +235,13 @@ jQuery(document).ready(function ($) {
         }
     });
 
-    if ($('input#acconsento').length > 0) {
+    /*if ($('input#acconsento').length > 0) {
         $('input#acconsento').unwrap();
+    }*/
+
+    if ($('.site-contacts form.wpcf7-form input[type="checkbox"]').length == 1) {
+        $('.site-contacts form.wpcf7-form input[type="checkbox"]').attr('id', 'acconsento');
+        $('.site-contacts form.wpcf7-form input[type="checkbox"]').unwrap().unwrap().unwrap();
     }
 
     //center content in home header and set it 100% height
